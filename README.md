@@ -11,7 +11,15 @@ Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. L
 <img src="pot.png" height="150">
 
 - Apporter les plantes dans une zone prédéfinie
+
+<img src="aire de dépose.jpg" height="200">
+
 - Trier les plantes par type
+
+<img src="type plante.png" alt="Titre, facultatif" height="150">
+
+> Deux plantes fragiles 1 plante résistante</figcaption
+
 - Orienter des panneaux solaires
 
 L'ensemble des travaux doit être réaliser dans un temps imparti et sans colision avec son envirronnement (murs, autres robots, plantes, pots).
