@@ -1,4 +1,4 @@
-<img src="logo.png">
+<img src="logo.svg">
 
 ## Objectifs
 Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. Les travaux à effectuer sont les suivants :
