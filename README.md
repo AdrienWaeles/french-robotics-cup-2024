@@ -1,22 +1,22 @@
-<img src="logo.png">
+<img src="./src/logo.png">
 
 ## Objectifs
 Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. Les travaux à effectuer sont les suivants :
 - Ramasser différents types de plante
 
-<img src="plante.png" height="200">
+<img src="./src/plante.png" height="200">
 
 - Mettre les plantes dans des pots
 
-<img src="pot.png" height="130"><img src="plante + pot.png" height="250">
+<img src="./src/pot.png" height="130"><img src="./src/plante + pot.png" height="250">
 
 - Apporter les plantes dans une zone prédéfinie
 
-<img src="aire de dépose.jpg" height="200">
+<img src="./src/aire de dépose.jpg" height="200">
 
 - Trier les plantes par type
 
-<img src="type plante.png" alt="Titre, facultatif" height="150">
+<img src="./src/type plante.png" height="150">
 
 > Deux plantes fragiles, une plante résistante
 
@@ -28,7 +28,7 @@ L'ensemble des travaux doit être réaliser dans un temps imparti et sans colisi
 - Dimmension du robot :
     - Périmètre compris entre 1200 et 1300 mm
 
-    <img src="dimmension max.jpg" height="300">
+    <img src="./src/dimmension max.jpg" height="300">
     
     - Hauteur inférieure à 350 mm
 
