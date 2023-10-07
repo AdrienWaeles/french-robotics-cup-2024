@@ -8,7 +8,7 @@ Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. L
 
 - Mettre les plantes dans des pots
 
-<img src="pot.png" height="150">
+<img src="pot.png" height="130">
 <img src="plante + pot.png" height="250">
 
 - Apporter les plantes dans une zone prédéfinie
