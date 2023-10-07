@@ -1,5 +1,5 @@
 # Projet-rob3
-<img src="logo.png">
+<img src="farming mars.png">
 
 ## Objectifs
 Nettoyage autonome de surfaces type vitre (fenêtre, panneau solaire)
