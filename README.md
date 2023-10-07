@@ -3,7 +3,13 @@
 ## Objectifs
 Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. Les travaux à effectuer sont les suivants :
 - Ramasser différents types de plante
+
+<img src="plante.avif" height="200">
+
 - Mettre les plantes dans des pots
+
+<img src="pot.avif" height="150">
+
 - Apporter les plantes dans une zone prédéfinie
 - Trier les plantes par type
 - Orienter des panneaux solaires
@@ -13,6 +19,9 @@ L'ensemble des travaux doit être réaliser dans un temps imparti et sans colisi
 ## Contraintes
 - Dimmension du robot :
     - Périmètre compris entre 1200 et 1300 mm
+
+    <img src="dimmension max.jpg" height="300">
+    
     - Hauteur inférieure à 350 mm
 
 ## Composants principaux
