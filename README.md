@@ -4,11 +4,11 @@
 Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. Les travaux à effectuer sont les suivants :
 - Ramasser différents types de plante
 
-<img src="plante.avif" height="200">
+<img src="plante.png" height="200">
 
 - Mettre les plantes dans des pots
 
-<img src="pot.avif" height="150">
+<img src="pot.png" height="150">
 
 - Apporter les plantes dans une zone prédéfinie
 - Trier les plantes par type
