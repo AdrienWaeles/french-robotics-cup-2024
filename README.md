@@ -18,7 +18,7 @@ Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. L
 
 <img src="type plante.png" alt="Titre, facultatif" height="150">
 
-> Deux plantes fragiles 1 plante résistante
+> Deux plantes fragiles, une plante résistante
 
 - Orienter des panneaux solaires
 
