@@ -1,5 +1,5 @@
 
-<span style="font-family: 'CMU Serif';">
+<span style="font-family: 'cmunrm';">
 
 # Bibliography: Robot competing in the Coupe de France de Robotique
 ## The PolyMartian
