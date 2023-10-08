@@ -22,10 +22,10 @@ Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. L
 
 - Orienter des panneaux solaires
 
-L'ensemble des travaux doit être réaliser dans un temps imparti et sans colision avec son envirronnement (murs, autres robots, plantes, pots).
+L'ensemble des travaux doit être réaliser dans un temps imparti et sans collision avec son envirronnement (murs, autres robots, plantes, pots).
 
 ## Contraintes
-- Dimmension du robot :
+- Dimmensions du robot :
     - Périmètre compris entre 1200 et 1300 mm
 
     <img src="./src/dimmension max.jpg" height="300">
