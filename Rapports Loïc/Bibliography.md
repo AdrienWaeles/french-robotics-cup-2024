@@ -1,12 +1,3 @@
-<style>
-@font-face {
-  font-family: 'CMUSerif'; /* Choose a name for your font */
-  src: url('CMUNRM.TTF'); /* Update the path to your font file */
-}
-body {
-  font-family: 'CMUSerif'; /* Apply the custom font to the entire document */
-}
-</style>
 
 # Bibliography: Robot competing in the Coupe de France de Robotique
 ## The PolyMartian
@@ -191,5 +182,3 @@ complex system, requiring more moving parts to operate.
 To respond to its tasks, the robot will have to manipulate
 ## Sources :
 https://www.coupederobotique.fr/edition-2024/le-concours/reglement-2024/
-
-</p>
