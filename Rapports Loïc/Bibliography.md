@@ -2,7 +2,7 @@
 # Bibliography: Robot competing in the Coupe de France de Robotique
 ## The PolyMartian
 ### Table of contents :
-1. [Introduction](###introduction)
+1. [Introduction](#introduction)
 2. [Goal](#goal)
 3. [Rules analysis](#rules-analysis)
 4. [Technical description](#technical-description)
