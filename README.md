@@ -1,4 +1,4 @@
-<img src="./src/logo.png">
+<img src="./src/polymartien.png">
 
 ## Objectifs
 Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. Les travaux à effectuer sont les suivants :
