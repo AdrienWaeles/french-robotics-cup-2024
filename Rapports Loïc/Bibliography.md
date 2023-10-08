@@ -2,22 +2,22 @@
 # Bibliography: Robot competing in the Coupe de France de Robotique
 ## The PolyMartian
 ### Table of contents :
-1. [Introduction](#Introduction)
-2. [Goal](#Goal)
-3. [Rules analysis](#Rules-analysis)
-4. [Technical specifications](#Technical-specifications)
-5. [Strategy](#Strategy)
-6. [Equipment list](#Equipment-list)
-7. [Main robot’s conception](#Main-robot’s-conception)
-    1. [Rolling base](#Rolling-base)
-    2. [Grasping actuator](#Grasping-actuator)
-    3. [Storage](#Storage)
-    4. [Sensors](#Sensors)
-    5. [Power supply](#Power-supply)
-8. [Algorithm](#Algorithm)
-9. [Gantt diagram](#Gantt-diagram)
-10. [Work distribution](#Work-distribution)
-11. [Sources](#Sources)
+1. [Introduction](#introduction)
+2. [Goal](#goal)
+3. [Rules analysis](#rules-analysis)
+4. [Technical description](#technical-description)
+5. [Strategy](#strategy)
+6. [Equipment list](#equipment-list)
+7. [Main robot’s conception](#main-robot’s-conception)
+    1. [Rolling base](#rolling-base)
+    2. [Grasping actuator](#grasping-actuator)
+    3. [Storage](#storage)
+    4. [Sensors](#sensors)
+    5. [Power supply](#power-supply)
+8. [Algorithm](#algorithm)
+9. [Gantt diagram](#gantt-diagram)
+10. [Work distribution](#work-distribution)
+11. [Sources](#sources)
 
 ### Introduction :
 The “Coupe de France de Robotique” is a competition involving the creation of an
