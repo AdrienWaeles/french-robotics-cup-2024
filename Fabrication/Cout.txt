@@ -1,4 +1,38 @@
 1 plaque de contre-plaqué 5mm 300x600mm
   5€
-1 impression 3D : durée 7h30 masse 90g
+impression 3D : durée 7h30 masse 90g
   2.7€
+impression 3D : durée 1h30 masse 20g
+  0.6€
+2 moteurs brushless
+  62€
+Bouton d'arrêt d'urgence
+  8.5€
+2 paires de roue de rolleur
+  24€
+Guide linéaire 300x600mm
+  32€
+3 courroies de 5mx6mmx2mm
+  25€
+2 moteurs DC 24v 35w 220rpm
+  234€
+NEMA 17
+  13€
+2 poulies GT2
+  2.7€
+Stepper driver arduino
+  2.2€
+2 driver DC Cytron 5v-30v 10A
+  26€
+Arduino méga
+  23€
+Nvidia jetson nano
+  250€
+4 profilé aluminium 250mmx20mmx20mm v-slot
+  55€
+vis diverses
+  20€
+Tapis de jeu + accesoires
+  170€
+Bois de construction
+  135€
