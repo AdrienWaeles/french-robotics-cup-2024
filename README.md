@@ -1,39 +1,39 @@
 <img src="./src/polymartian.png">
 
-## Objectifs
-Le robot a pour objectif d'effectuer plusieurs tâches en complète autonomie. Les travaux à effectuer sont les suivants :
-- Ramasser différents types de plante
+## Objectives
+The purpose of the robot is to carry out several tasks in complete autonomy. The tasks to be performed are as follows:
+- Pick up different types of plant
 
 <img src="./src/plante.png" height="200">
 
-- Mettre les plantes dans des pots
+- Place plants in pots
 
 <img src="./src/pot.png" height="130"><img src="./src/plante + pot.png" height="220">
 
-- Apporter les plantes dans une zone prédéfinie
+- Bring plants to a predefined area
 
 <img src="./src/aire de dépose.jpg" height="200">
 
-- Trier les plantes par type
+- Sort plants by type
 
 <img src="./src/type plante.png" height="150">
 
-> Deux plantes fragiles, une plante résistante
+> Two fragile plants, one resistant plant
 
-- Orienter des panneaux solaires
+- Orienting solar panels
 
-L'ensemble des travaux doit être réaliser dans un temps imparti et sans collision avec son envirronnement (murs, autres robots, plantes, pots).
+All the work must be completed within the allotted time and without colliding with the environment (walls, other robots, plants, pots).
 
-## Contraintes
-- Dimmensions du robot :
-    - Périmètre compris entre 1200 et 1300 mm
+## constraints
+- Robot dimensions :
+    - Perimeter between 1200 and 1300 mm
 
     <img src="./src/dimmension max.jpg" height="300">
     
-    - Hauteur inférieure à 350 mm
+    - Height under 350 mm
 
-## Composants principaux
-- Châssis / Base roulante
-- Système de préhension (pince sur rail)
-- Systèmes de vision (caméras, capteurs)
-- Système de stockage (plateau tournant)
+## Main components
+- Chassis / Rolling base
+- Gripper system (rail-mounted gripper)
+- Vision systems (cameras, sensors)
+- Storage system (turntable)
