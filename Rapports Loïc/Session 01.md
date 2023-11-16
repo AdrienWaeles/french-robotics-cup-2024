@@ -14,7 +14,7 @@ In order to transmit the motor torque, I designed the adapter with a flat surfac
 
 <img src="./src/session_01/20231114_120321.jpg" height="250">   <img src="./src/session_01/20231114_120326.jpg" height="250">
 
-> You can see a wheel in black, the 3D-printed adapter in white and a motor mounted on a previously-produced 3D-printed bracket, which in turn is screwed onto the laser-cut plywood frame.
+> We can see a wheel in black, the 3D-printed adapter in white and a motor mounted on a previously-produced 3D-printed bracket, which in turn is screwed onto the laser-cut plywood frame.
 
 ### Motor mount
 The motors currently in place are DC motors with a planetary gearbox, but we'd like to try brushless motors to see if they're more efficient than DC motors. The brushless motors we have are much larger in diameter but smaller in length, so I had to redesign the motor mount to accommodate them. I also had to redo the spacers between the plywood panels that form the frame, as the brushless motors are too big to fit between the panels.
@@ -28,3 +28,10 @@ We received the game mat that will be put on the 2*3m table. This mat delimits t
 We unwrapped the mat to make sure everything was in order and to see what it looked like. We thought it would be made in a single piece, but it is actually made in 3 pieces that we will have to assemble. We will have to find a way to make the joints between the pieces as invisible as possible.
 
 ## Next time
+I will modify the motors connectors by 3.5mm bullet connectors so we can plug them to the ESCs we received the same day as the mat. 
+
+After that, I will make a quick Arduino code to test the motors and ESCs to make sure everything works as expected.
+
+Then, I will concentrate at the modification of the futur version 3 of the robot to move the wheels to the middle of the chassis and create a system so the motors remain at the rear of the rolling base.
+
+If I have some time left, I will finish the hardware of the grabber system and make a quick Arduino code to test it.
