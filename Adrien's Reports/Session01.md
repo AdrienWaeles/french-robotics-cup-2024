@@ -41,6 +41,8 @@ To calculate this coefficient, proceed as follows:
 
 <img src="Report's images\Session01\hanging_seal_method_illustration_fromRCVA.png" width="400">
 
+(Image Source : RCVA Team)
+
 - Measure the support force of the drive wheels on the ground by placing the robot wheels on a scale while keeping it horizontal with a wedge under the free wheel. Note this mass P1.
 - Measure the mass of the objects in the bucket from which the robot is at the slipping limit, i.e., the force required to slide the robot with the wheels blocked. Note this mass P2.
 - Finally, the coefficient is simply Ka = P2/P1.
