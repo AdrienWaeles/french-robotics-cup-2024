@@ -15,7 +15,8 @@ However, for the robot to move easily and quickly avoid the opponent robot, it i
 
 My research also led me to realize that it would be risky to place encoders directly on the motor axes for robot odometry (i.e., to know its position based on the number of wheel rotations). In the event of robot slippage, the encoder may not be incremented even though the robot has moved, causing a drift in our estimation compared to the actual position. That's why many teams opt for encoder wheels. This involves placing encoders on free wheels parallel to the drive wheels. These free wheels are fixed via a pivot link so that the wheel can always remain in contact with the ground. Finally, the narrower the encoder wheels, the higher the odometry precision will be.
 <img src="Report's images\Session01\Codingwheels_drawing_fromCUBOT.png" width="300">
-<img src="Report's images\Session01\Codingwheels_liaison_drawing_fromCUBOT.png" width="300">
+<img src="Report's images\Session01\Codingwheels_liaison_drawing_fromCUBOT.png" width="200">
+
 (Images Source : Cubot Team)
 
 
