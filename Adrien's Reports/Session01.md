@@ -22,7 +22,7 @@ My research also led me to realize that it would be risky to place encoders dire
 
 
 ## Assembly and testing of motors and wheels, and encountered problems:
-We were able to test our motors by connecting them using Cytron 13A CC Driver Cards.
+We were able to test our motors by connecting them using Cytron 13A CC Driver Cards and 12V Power supply.
 
 This revealed a first problem: at high speed, the wheels shake perpendicular to the wheel plane. The most probable hypotheses are that this is due to wheel warping. We ordered roller wheels for good grip, but no precision information is provided on manufacturing tolerance. This will be verified with a comparator before the next session. Another possibility is that the motor axis is not perfectly perpendicular to the wheel axis. Finally, play within the motor can also be the cause, but it is much less than the rotation play of the wheel.
 
