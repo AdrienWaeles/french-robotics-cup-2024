@@ -8,6 +8,7 @@ During this session, we assembled the motors and wheels on the base so that I co
 
 ##Changes to the Rolling Base:
 As mentioned in the project bibliography, the new version of our U-shaped robot has a large empty space in the center to collect plants in large quantities. This efficiency gain adds a significant constraint: we are now obliged to place the motors at the rear of the robot, as shown in the model created by Loïc below.
+
 <img src="Report's images\Session01\URobot_3DModelisation.png" width="300">
 
 However, for the robot to move easily and quickly avoid the opponent robot, it is preferable for the robot to be able to rotate on itself, and therefore have its wheels placed in the middle. Thus, we decided to shift the wheels by transmitting the rotation of the motors placed at the back of the robot to the wheels in the middle using belts.
