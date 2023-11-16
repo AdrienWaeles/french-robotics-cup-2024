@@ -23,9 +23,15 @@ The motors currently in place are DC motors with a planetary gearbox, but we'd l
 
 > Both models can be 3D printed without any support so it reduces post processing, material waste and print time.
 
+<img src="./src/session_01/20231107_165111.jpg" height="300">
+
+> On the left the DC motors, on the right the brushless motors.
+
 ## Table
 We received the game mat that will be put on the 2*3m table. This mat delimits the different action zones in which the robot must move and perform actions determined by the cup rules.
 We unwrapped the mat to make sure everything was in order and to see what it looked like. We thought it would be made in a single piece, but it is actually made in 3 pieces that we will have to assemble. We will have to find a way to make the joints between the pieces as invisible as possible.
+
+<img src="./src/session_01/mat.jpg" height="300">   <img src="./src/session_01/robot on mat.jpg" height="300">  <img src="./src/session_01/accessory mat.jpg" height="300">
 
 ## Next time
 I will modify the motors connectors by 3.5mm bullet connectors so we can plug them to the ESCs we received the same day as the mat. 
@@ -33,5 +39,7 @@ I will modify the motors connectors by 3.5mm bullet connectors so we can plug th
 After that, I will make a quick Arduino code to test the motors and ESCs to make sure everything works as expected.
 
 Then, I will concentrate at the modification of the futur version 3 of the robot to move the wheels to the middle of the chassis and create a system so the motors remain at the rear of the rolling base.
+
+<img src="./src/session_01/robot v3.jpg" height="300">
 
 If I have some time left, I will finish the hardware of the grabber system and make a quick Arduino code to test it.
