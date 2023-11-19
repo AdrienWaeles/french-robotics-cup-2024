@@ -6,7 +6,7 @@ The brushless motors we ordered were send with male MT30 connectors which are no
 
 Because the ESCs are sold without any connectors, I decided to replace the motors connectors by 3.5mm bullet connectors so we have female connectors on the ESCs and male connectors on the motors. The use of bullet connectors is much more convinient for the reasons mentioned above.
 
-<img src="./src/session_02/MT30.jpg" height="250"> <img src="./src/session_02/ESC.jpg" height="250">    <img src="./src/session_02/Motor.jpg" height="250">
+<img src="./src/session_02/MT30.jpg" height="200"> <img src="./src/session_02/ESC.jpg" height="200">    <img src="./src/session_02/Motor.jpg" height="200">
 
 Once I finished soldering the connectors, I tested the motors with the ESCs and it worked perfectly. I used a 6S (22V Li-ion) battery to power the ESCs wich are rated for 3S to 6S. I powered the Arduino with the 5V output of the ESC. I mounted the motor on the 3D printed support that will later be used to mount it on the robot.
 
