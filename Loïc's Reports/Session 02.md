@@ -32,9 +32,7 @@ void loop() {
   delay(10);
 }
 ```
-My code is really basic, it reads the value of a potentiometer on pin **A0** and writes the value to the ESC using the library ***Servo***. The ESC then sends the corresponding three-phase PWM signal to the motor. The motor speed is proportional to the PWM signal. Here is a video of a brushless motor running with this code:
-
-<video src="./src/session_02/run test.mp4" height="400" controls></video>
+My code is really basic, it reads the value of a potentiometer on pin **A0** and writes the value to the ESC using the library ***Servo***. The ESC then sends the corresponding three-phase PWM signal to the motor. The motor speed is proportional to the PWM signal. A video of the test can be found [here](https://github.com/Loic-LEROY/PolyMartian/blob/main/Lo%C3%AFc's%20Reports/src/session_02/run%20test.mp4) on the GitHub repository.
 
 I was really impressed by quality of the motors, they run super smooth and are really quiet.
 
