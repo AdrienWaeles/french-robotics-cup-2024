@@ -50,3 +50,24 @@ To match this new strategy, I modeled on SolidWorks a whole new robot. The motor
 > On the left le first version of the robot, on the right the new version
 
 Before building the new robot, I already found that there is a problem with the new design. The wheels are at an extremity of the robot, so it reduces the maniability of the robot by augmenting the truning radius. To solve this issue, I will have to move the wheels closer to the center of the robot like on the first version. The problem now is that I cannot move the motors from their position because they would block the area where the plants are "stored". The solution is to let the motors where they are and to move the wheels closer to the center of the robot. This will require to use a belt transmission to connect the motors to the wheels. I will also had a belt tensioner to be able to adjust the belt tension.
+
+Here is the new version I come up with:
+
+<img src="./src/session_02/robot v3.1.jpg" weight="350">
+
+> Some parts are transparent for a better visibility but they won't be transparent on the real robot.
+
+As you can see on the image above and the images below, I also added one freewheel to each side of the robot. These wheels are not motorised, they aim to measure the distance travelled by the robot. This will allow us to know the position of the robot on the field. I will use a rotary encoder to measure the rotation of these wheels. By measuring the position of the robot on non driving wheels, we ensure that the position is not affected by the slippage of the driving wheels which can append when the robot accelerates or decelerates too much or if it loses traction due to the ground conditions like grease or dust.
+
+<img src="./src/session_02/robot v3.1 detail.jpg" height="200"> <img src="./src/session_02/robot v3.1 detail 2.jpg" height="200"> <img src="./src/session_02/robot v3.1 detail 3.jpg" height="200"> <img src="./src/session_02/robot v3.1 side.jpg" height="200">
+
+> Some details of the mounting of the freewheels and the driving wheels.
+
+In order to ensure a good regidity off the mounting of the driving wheels, I added a 3D printed part with a triangular shape for resistance and it creates a great pivot for the driving wheels. More over, I've modelled a system that maintains pressure on the freewheels to avoid distorting the measurements should they come off the ground due to imperfections in the playing surface. This system consists of a swinging arm to which the freewheel is pivotally attached, and which is pressed towards the ground by a spring that forces it to lower the freewheel.
+
+For information, the spring and its support are not yet modeled on the robot model. It will be done next time; all pivot are ball-bearing mounted to reduce friction. All features from the previous version have not been added yet.
+
+## Next time
+- Finish the freewhell system
+- Model the belt tensioner
+- Add the previous features (already modeled for the previous version)
