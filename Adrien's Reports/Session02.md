@@ -41,9 +41,13 @@ To address this issue, we need to implement a coefficient to multiply the number
 
 ## New conception for the rolling base with its coding wheels
 
-Finally i designed a diagram of the new rolling base to determine how we will place our coding wheels, motors and drive wheels.
-
 <img src="Report's images\Session02\rollingbase_sketch_with_codingwheels.jpg" width="500">
+
+
+I designed a diagram of the new rolling base to determine how we will position our coding wheels, motors, and drive wheels. To place the wheels in the middle of the robot, we chose to use belts to transmit the rotation of the motors, which are positioned at the back of the base. This decision was influenced by our choice to store plants at the center of the robot, leaving only the back for motor placement.
+
+As explained earlier, the coding wheels are positioned in parallel to the driving wheels at the extremities to achieve a large center-to-center distance. Each coding wheel is mounted on the base with a pivot joint to ensure constant contact with the floor. Finally but not least, we have incorporated three freewheels for enhanced stability in the robot.
+
 
 
 **Next session tasks:**
