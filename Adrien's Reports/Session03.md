@@ -40,13 +40,14 @@ We define encoder pins as "INPUT_PULLUP" so if there is no signal on this pin, w
 <img src="Report's images\Session03\code_input_pullup.png" width="500">
 
 Then we will use interruptions so each time there is a changement on one of the left or right encoder pin, we will call the associated interrupt functions.
+
 <img src="Report's images\Session03\code_interruption.png" width="500">
 
 Finally as each coding wheel has a little diameter difference, we will never have the same number of tick per cm on each during translations and rotations. That's why we introduced the following variables : 
 
 <img src="Report's images\Session03\code_tick_perCm&perRad.png" width="500">
 
-The rest of the code with the pid regulation is commented and available on the github.
+The rest of the code with the pid regulation and odometry is well commented and available on the github.
 
 
 ## **Next session tasks:** 
