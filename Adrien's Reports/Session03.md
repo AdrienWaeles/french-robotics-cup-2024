@@ -37,7 +37,7 @@ Finally i prepared an algorithm to control motors with a closed loop regulation.
 
 We define encoder pins as "INPUT_PULLUP" so if there is no signal on this pin, we will receive the value 1 and when we will reveive something it will be 0.
 
-<img src="Report's images\Session03\code_input_pullup.png" width="500">
+<img src="Report's images\Session03\code_input_pullup.png" width="400">
 
 Then we will use interruptions so each time there is a changement on one of the left or right encoder pin, we will call the associated interrupt functions.
 
