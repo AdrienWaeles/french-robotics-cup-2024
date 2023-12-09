@@ -78242,3 +78242,9 @@ During this session, I laser cutted the main frame panels. I cutted them in 3.5m
 > On the left the lower panel, on the rigth the upper one.
 
 Assembling the two panels and the 3D-printed parts results in a structure that's very light but nevertheless very rigid, quick and easy to manufacture and very inexpensive. What's more, components can be fixed between the two panels, protecting them and lowering the center of gravity.
+
+## Next time
+- Model the belt tensioner
+- Assemble the new robot
+- Assemble the grabber
+- Test the grabber
