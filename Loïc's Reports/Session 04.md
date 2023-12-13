@@ -140485,8 +140485,8 @@ endsolid Exported from Blender-3.4.1
 > New motor mount, it is more compact than the previous version.
 Since I mouved the wheels to the center of the robot, they are no longuer directly mounted on the motor shaft so I had to redesign the hub adapter because the motor's shaft are 8mm in diameter and the wheel's axis only 5mm. Moreover, I would like to transmit the torque from the pulley to the wheel.
 I came up with the following design which aims to be pressed into the wheel and goes arround the pulley. Then a screw can be added to avoid a rotation between the wheel and the pulley.
-
-> 
+<img src=
+> New wheel hub
 ## 3D Printing
 
 
