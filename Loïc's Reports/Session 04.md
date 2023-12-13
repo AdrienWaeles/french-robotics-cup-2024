@@ -30,3 +30,7 @@ I spent a large part of the session to make some holes in the frame of the robot
 > Some photos of the robot from different angles. Plastic protections had not been removed yet. Some screws are missing to save time.
 
 ## Next Session
+- Cut and thread the shafts
+- Finish the frame
+- Mount the freewheels (coding wheels)
+- Mount the grabber
