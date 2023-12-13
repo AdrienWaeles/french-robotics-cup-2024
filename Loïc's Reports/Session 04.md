@@ -27,6 +27,6 @@ I spent a large part of the session to make some holes in the frame of the robot
 
 <img src="./src/session_04/20231212_114601.jpg" width="250"> <img src="./src/session_04/20231212_114616.jpg" width="250"> <img src="./src/session_04/20231212_114630.jpg" width="250"> <img src="./src/session_04/20231212_114640.jpg" width="250"> <img src="./src/session_04/20231212_114652.jpg" width="250"> <img src="./src/session_04/20231212_114709.jpg" width="250">
 
-> Some photos of the robot from different angles.
+> Some photos of the robot from different angles. Plastic protections had not been removed yet. Some screws are missing to save time.
 
 ## Next Session
