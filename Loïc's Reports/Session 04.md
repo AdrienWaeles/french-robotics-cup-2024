@@ -1,6 +1,6 @@
 # December 12, 2023
 ## 3D Modeling
-
+During this session, I modeled on SolidWorks the belt tensioner. To tension the belt, I made oblong holes in the panels of the robot's frame so the motor mounts can translate and by controlling the center to center distance between the two pulleys, I can adjust the tension of the belt.
 ```stl
 solid Exported from Blender-3.4.1
 facet normal 0.000000 0.000000 1.000000
@@ -140482,7 +140482,11 @@ endfacet
 endsolid Exported from Blender-3.4.1
 
 ```
+> New motor mount, it is more compact than the previous version.
+Since I mouved the wheels to the center of the robot, they are no longuer directly mounted on the motor shaft so I had to redesign the hub adapter because the motor's shaft are 8mm in diameter and the wheel's axis only 5mm. Moreover, I would like to transmit the torque from the pulley to the wheel.
+I came up with the following design which aims to be pressed into the wheel and goes arround the pulley. Then a screw can be added to avoid a rotation between the wheel and the pulley.
 
+> 
 ## 3D Printing
 
 

@@ -78235,7 +78235,7 @@ endsolid Exported from Blender-3.4.1
 > Interactive preview of the 3D printed parts.
 
 ## Laser cutting
-During this session, I laser cutted the main frame panels. I cutted them in 3.5mm acrylic as it is easier to work on after it as been cutted and because it does not burn so I don't have to clean the burnt edges. More over, it does not smell smoke as much as wood does. Here are the ```.svg``` files I used to cut the panels.
+During this session, I laser cutted the main frame panels. I cutted them in 3.5mm acrylic as it is easier to work on after it as been cutted and because it does not burn so I don't have to clean the burnt edges. Moreover, it does not smell smoke as much as wood does. Here are the ```.svg``` files I used to cut the panels.
 
 <img src="./src/session_03/plaque dessous.svg" width="400"> <img src="./src/session_03/plaque dessus.svg" width="400">
 
