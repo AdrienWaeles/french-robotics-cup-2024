@@ -20,9 +20,13 @@ To finish, I modeled the encoders mount. I modified the previously made pivot ar
 > Encoder mount, the encoder is the green part
 
 ## 3D Printing
-During the session, I printed the belt tensioner and the wheel hub. I also printed the encoder mount.
+During the session, I printed the belt tensioner and the wheel hub. I also printed the encoder mount. All pieces are perfect. I chose to print them in PETG because it is stronger than PLA and easy to print.
 
 ## Hand Made
+I spent a large part of the session to make some holes in the frame of the robot. I forgot a few holes for some screw so I had to make them. It was not difficult because I took the time to take the measures and to mark the holes before drilling them. I also mounted the ball freewheel, the new mounts. I put all the ball bearings into the different parts and the brass inserts as well.
 
+<img src="./src/session_04/20231212_114601.jpg" width="250"> <img src="./src/session_04/20231212_114616.jpg" width="250"> <img src="./src/session_04/20231212_114630.jpg" width="250"> <img src="./src/session_04/20231212_114640.jpg" width="250"> <img src="./src/session_04/20231212_114652.jpg" width="250"> <img src="./src/session_04/20231212_114709.jpg" width="250">
+
+> Some photos of the robot from different angles.
 
 ## Next Session
