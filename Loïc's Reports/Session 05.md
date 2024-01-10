@@ -10,3 +10,11 @@ After I finished making the two needed belts, I modified the robot frame to make
 <img src="./src/session_05/oblong holes.jpg" height="400"> <img src="./src/session_05/oblong holes2.jpg" height="400">
 
 > A 3D view of the oblong holes I made on the real frame.
+
+During the last part of the session, I cutted the wheels' shafts to the right length and I tried to thread them but it didn't work because the die was damaged. I planned to thread the ends and then use nuts to stop the shafts axially. I will have to find a new die to finish this task or find another way to stop the shafts.
+
+# Next session
+- Solve the shafts problem
+- Reassemble the robot entirely
+- Add the vertical gripper I made previously
+- Add the coding wheels I made previously
