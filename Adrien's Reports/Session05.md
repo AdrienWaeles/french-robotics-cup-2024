@@ -22,8 +22,7 @@ This was very challenging because the magnets were likely assembled while hot. A
 
 We needed to position the magnets we recovered at the ends of our coding wheel metal rods. Gluing them together didn't seem like the best solution due to the rotational speed of the coding wheels. Losing the magnets during the competition would be dramatic, as it would prevent us from correcting our trajectories and tracking the robot's localization. Therefore, I decided to create a small 3D-printed part that will be used as a flush-link connection.
 
-<img src="Report's images\Session05\3djoint_magnetmetalrod_1.png" width="200">
-<img src="Report's images\Session05\3djoint_magnetmetalrod_2.png" width="200">
+<img src="Report's images\Session05\3djoint_magnetmetalrod_1.png" width="200"><img src="Report's images\Session05\3djoint_magnetmetalrod_2.png" width="200">
 
 Each part is forcefully inserted into a hole in the plastic component with zero tolerance. To enhance the fixation, we will even apply glue to the plastic part.
 
