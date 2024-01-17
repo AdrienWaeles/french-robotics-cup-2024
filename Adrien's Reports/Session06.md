@@ -34,12 +34,10 @@ I had a correct result only when placing the side of it in front of the hall sen
 
 Since our original magnet had a hole in the center, I wondered if this had an influence on the magnetic field. To verify this, I attempted to drill a hole in the new magnet using a drill press. However, it was challenging to keep the drill perpendicular without creating a specialized support.
 
-<img src="Report's images\Session06\original_magnet.jpg" width="88">
-Original Magnet
+<img src="Report's images\Session06\original_magnet.jpg" width="88"> Original Magnet
 
 
-<img src="Report's images\Session06\tested_magnet.jpg" width="100">
-Tested Magnet
+<img src="Report's images\Session06\tested_magnet.jpg" width="100"> Tested Magnet
 
 
 To grasp the issue, I delved into understanding the precise workings of an encoder. A magnetic encoder detects rotational position changes through variations in the magnetic field. As the motor shaft's attached permanent magnet rotates, the magnetic sensor registers shifts in the magnetic field. But there are different way of magnetizing a magnet : it can be with a radial direction or axial direction as explained below.
