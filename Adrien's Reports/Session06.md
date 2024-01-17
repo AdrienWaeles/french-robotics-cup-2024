@@ -36,6 +36,7 @@ Since our original magnet had a hole in the center, I wondered if this had an in
 
 <img src="Report's images\Session06\original_magnet.jpg" width="88"> Original Magnet
 
+-
 
 <img src="Report's images\Session06\tested_magnet.jpg" width="100"> Tested Magnet
 
