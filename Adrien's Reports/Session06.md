@@ -43,6 +43,7 @@ Since our original magnet had a hole in the center, I wondered if this had an in
 
 To grasp the issue, I delved into understanding the precise workings of an encoder. A magnetic encoder detects rotational position changes through variations in the magnetic field. As the motor shaft's attached permanent magnet rotates, the magnetic sensor registers shifts in the magnetic field. But there are different way of magnetizing a magnet : it can be with a radial direction or axial direction as explained below.
 <img src="Report's images\Session06\magnetization_field_lines_fromAKM.png" width="450">
+
 The Hall element is positioned in an area where the horizontal magnetic field is uniform. So in front of a planar face with our original magnet.
 
 This is likely the reason why our encoder wasn't detecting variations on our new magnet.
