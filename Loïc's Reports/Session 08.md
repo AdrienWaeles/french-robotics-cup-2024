@@ -1,6 +1,6 @@
 # February 07, 2024
 ### Vertical rail
-Last session, I mounted the vertical rail onto the robot but they looked a bit fragile. I decided reprint them with a thicker wall so they are more robust. Now the vertical rail is strongly attached to the robot, I can fix the stepper motor and the pulley on it. The stepper motor I chose is a pancake Nema 17. It is the same motor as a classic Nema 17 but it is twice as thin and twice as light. The classic version has a torque of 0.26Nm but the pancake version has a torque of 0.16Nm yet it is enough for the vertical rail which is not supposed to carry a heavy load (a few tens of grams).
+Last session, I mounted the vertical rail onto the robot but they looked a bit fragile. I decided reprint them with a thicker wall so they are more robust. Now the vertical rail is strongly attached to the robot, I can fix the stepper motor and the pulley on it. The stepper motor I chose is a pancake Nema 17. It is the same motor as a classic Nema 17 but it is twice as thin and twice as light. The classic version has a torque of **0.26 Nm** but the pancake version has a torque of **0.16 Nm** yet it is enough for the vertical rail which is not supposed to carry a heavy load (a few tens of grams).
 
 <img src="./src/session_08/versus.jpg" height="300">
 
