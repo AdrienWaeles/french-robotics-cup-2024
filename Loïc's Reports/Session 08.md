@@ -33,6 +33,8 @@ Then I found on the internet the models of the Raspberry Pi zero and the lidar b
 > First draft of the ladybug. Ultra compact and light.
 
 ## Next session
+- Mount the new wheels on the main robot
+- Update the grabber's design
 - Design the main robot's horyzontal rails
 - Mount them on the robot
 - Model the ladybug's chassis
