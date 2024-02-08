@@ -34,7 +34,7 @@ Then I found on the internet the models of the Raspberry Pi zero and the lidar b
 
 ## Next session
 - Mount the new wheels on the main robot
-- Update the grabber's design
+- Update the grabber's design to fit the vertical rail's belt mount
 - Design the main robot's horyzontal rails
 - Mount them on the robot
 - Model the ladybug's chassis
