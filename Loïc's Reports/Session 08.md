@@ -6,9 +6,14 @@ Last session, I mounted the vertical rail onto the robot but they looked a bit f
 
 > Left: pancake Nema 17; Right: classic Nema 17
 
-<img src="./src/session_08/20240207_181306.jpg" height="500">
+<img src="./src/session_08/stepper.jpeg" height="300"> <img src="./src/session_08/vertical rail.jpeg" height="300">
 
 > The stepper motor is fixed on top of the vertical rail, the pulley is fixed at the bottom of the rail. The belt is around the pulley and the motor shaft and is fixed to the cart of the rail.
+
+### Belt mount
+In order to move the cart up and down, a belt is attached to it and turns around the stepper on top of the rail and a pulley at the bottom of the rail. The belt is a GT2 belt, it is a standard belt for 3D printers and CNC machines. The belt is fixed to the cart with a 3D printed part. The part is designed to be fixed to the cart with 4 screws and to hold the belt with 4 other screws which go through the part and the belt. This way, the belt is strongly attached to the cart and the part is strongly attached to the cart.
+
+<img src="./src/session_08/belt mount.jpeg" height="300">
 
 ## 3D modeling
 ### Ladybug
