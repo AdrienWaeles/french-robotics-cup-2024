@@ -12,7 +12,7 @@ Now that our five wooden boards and borders have been assembled, we were able to
 
 After completing most of the assembly, we were not yet prepared to apply the self-adhesive carpet because the planks were not perfectly aligned, which would result in significant bumps after installation. To address this issue, we added more screws to the smaller planks between the larger ones beneath the table. This adjustment was necessary as our previous screws were not positioned closely enough to the separations to prevent bending.
 
-<img src="Report's images\Session08\aligning_wooden_planks.jpg" width="250">
+<img src="Report's images\Session08\aligning_wooden_planks.jpg" width="400">
 
 
 ## Applying the self-adhesive playmat.
@@ -26,7 +26,7 @@ I would like to thanks Frederic Juan from our school's Fablab for his help.
 
 Here is the final result : 
 
-<img src="Report's images\Session08\playground_table_finished.jpg" width="450">
+<img src="Report's images\Session08\playground_table_finished.jpg" width="550">
 
 
 ## Final issue with the encoder
@@ -40,7 +40,7 @@ During my tests, one encoder's values were still oscillating even when the wheel
 ## First ground test of our robot.
 To test the robot, I temporarily connected all the electronics, including a 24V battery, Cytron drivers, and the Arduino with rilsan collars. However, due to the weight being positioned at the back of the robot, its wheels were slipping, causing it to roll improperly. To address this issue, I added counterweights at the front of the robot to ensure proper ground adherence. (I temporarily used some boxes of screws for this purpose).
 
-<img src="Report's images\Session08\robot_with_counterweights.jpg" width="350">
+<img src="Report's images\Session08\robot_with_counterweights.jpg" width="500">
 
 ## Performing robot calibration.
 Subsequently, I conducted a test of my algorithm. Initially, I calibrated the robot by measuring the number of ticks per centimeter and per radian. To achieve this, I placed the robot on the ground and manually moved it alongside a one-meter ruler in a straight line. After covering one meter, I read the number of ticks received by the Arduino and divided it by 100 to obtain the number of ticks per centimeter.
@@ -52,6 +52,7 @@ For rotation calibration, I rotated the robot 360 degrees, and then divided the 
 This calibration enables me to calculate the distance traveled by the robot based on the number of ticks and correct our position until the desired one is reached. However, this method is not very precise, so we plan to soon manufacture a removable support that will be screwed onto the robot. This support will have a hole at the center of kinetics, allowing us to attach a board with a nail underneath the robot. This will enable us to rotate the robot in a perfectly circular manner.
 
 Here is the result in rotation : https://youtube.com/shorts/9qRIA3YaiO8?si=xRvWADhP5XFraYfz
+
 Here is the result in translation : https://youtube.com/shorts/vkulLAi6vmk?si=7tIgm1-a3TSwJvxI
 
 These results were obtained without utilizing PID correction, only employing a basic corrector.
