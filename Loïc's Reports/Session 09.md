@@ -20,3 +20,9 @@ In order to calibrate the robot's encoder wheels, I modeled in SolidWorks and th
 
 > The robot on the test bench. The part I've added is the light wood part in the middle of the robot.
 
+## Horyzontal rails
+
+
+## Next session
+- Print and mount the horyzontal rails on the robot.
+- Continued progress on ladybug design
