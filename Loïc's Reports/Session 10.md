@@ -31,3 +31,8 @@ I didn't had time to mount these parts on the robot but I will do it during the 
 <figure align="center">
     <img src="./src/session_10/printed parts.jpg" height=300>
 </figure>
+
+## Next session
+- Mount the printed parts on the robot
+- Design the ladybugs
+- Design the system to move the solar panels
