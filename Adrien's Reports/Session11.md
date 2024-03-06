@@ -1,6 +1,6 @@
 # Session report 11: March 05, 2024
 
-**Session objective:** 
+**Session objective:** Learn more about PID to improve our closed loop control model, implement trapezoidal speed profiles, make researches about robot trajectories.
 
 ## Researches about PID
 Previously i had issues with finding the optimum PID coefficients, so i took time to do more researches and i learned many things. All the articles which have led me to this conclusions will be linked in the cources section at the end of the document.
