@@ -128,7 +128,7 @@ $$ Z_{position} = Z_{previousposition} + angle_{travelled} $$
 $$ X_{position} = X_{previousposition} + (distance_{travelled} * cos(Z_{position})) $$
 $$ Y_{position} = X_{previousposition} + (distance_{travelled} * sin(Z_{position})) $$
 
-And $ Z_{position} $ will always be reduced to a value between $-2*\pi$ and $2*\pi$ 
+And $Z_{position}$ will always be reduced to a value between $-2*\pi$ and $2*\pi$ 
 
 Thus, I am able to obtain the absolute position of the robot on the table in real-time, regardless of its trajectory.
 
