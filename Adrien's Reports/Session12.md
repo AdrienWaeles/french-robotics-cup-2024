@@ -87,7 +87,7 @@ $$\Leftrightarrow \begin{cases} t_2 = \frac{a_1 + a_2}{a_1} * \tau \\ \frac{a_2}
 
 $$ l_1 \rightarrow l_2 \implies d_2 = \frac{a_2}{2*a_1} * (a_1 + a_2) * \tau^{2} $$
 
-$$ \implies \tau = \sqrt{ \frac{2*d_2*a_1}{a_2*(a_1+a_2)} } $$
+$$\implies \tau = \sqrt{ \frac{2*d_2*a_1}{a_2*(a_1+a_2)} }$$
 
 If necessary, we can also determine the maximum speed $v_1$​ now.
 
