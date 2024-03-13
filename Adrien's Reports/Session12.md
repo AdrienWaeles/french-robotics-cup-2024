@@ -27,9 +27,12 @@ $$decelerationDistance = \frac{1}{2} \cdot \text{maxDeceleration} \cdot \text{de
 If $(accelerationDistance + decelerationDistance) < \text{commandDistance}$,  we can apply this profile; otherwise, we won't have enough time to execute the constant speed phase and will proceed with a triangular speed profile.
 
 Finally, we can calculate the distance to be covered during the constant speed phase:
-$$ constantspeedDistance = commandDistance - accelerationDistance - decelerationDistance $$ 
+
+$$constantspeedDistance = \text{commandDistance} - accelerationDistance - decelerationDistance$$
+
 Therefore :
-$$ constantspeedTime = constantspeedDistance / maxSpeed $$
+
+$$constantspeedTime = \frac{constantspeedDistance}{\text{maxSpeed}}$$
 
 We are now almost ready to implement this profile in our robot. However, there are additional steps required to reduce rounding errors, but we will address those in the next session.
 
@@ -71,9 +74,14 @@ $$
 
 We have 4 unknown variables and 4 equations, therefore we should be able to solve this system.
 
-For better readability, let's define $\tau = t_2 - t_1 $ as the unknown we are searching for.
+For better readability, let's define $$\tau = t_2 - t_1$$ as the unknown we are searching for.
 
-$$\Leftrightarrow \begin{cases} v_1 = a_1 \cdot t_1 \\ v_2 = a_2 \cdot \tau + v_1 = 0\\ d_1 = \frac{1}{2} \cdot a_1 \cdot t_1^{2} \\ d_2 - d_1 = \frac{1}{2} \cdot a_2 \cdot \tau^{2} + v_1 \cdot \tau \end{cases}$$
+$$\Leftrightarrow \begin{cases} 
+v_1 = a_1 \cdot t_1 \\ 
+v_2 = a_2 \cdot \tau + v_1 = 0 \\ 
+d_1 = \frac{1}{2} \cdot a_1 \cdot t_1^{2} \\ 
+d_2 - d_1 = \frac{1}{2} \cdot a_2 \cdot \tau^{2} + v_1 \cdot \tau 
+\end{cases}$$
 
 
 Now let's solve this system : 
