@@ -17,13 +17,14 @@ $$ accelerationTime = maxSpeed / maxAcceleration $$
 $$ decelerationTime = maxSpeed / maxDeceleration $$
 
 Now, we can deduce the distance traveled during these durations using the kinematic equation for uniformly accelerated motion, which is: 
-$Displacement = InitialPosition+ \frac{1}{2} ​* Acceleration * t^{2} $
+
+$$Displacement = InitialPosition+ \frac{1}{2} ​* Acceleration * t^{2}$$
 
 Thus :
-$$ accelerationDistance = \frac{1}{2} * maxAcceleration * accelerationTime^{2}$$
-$$ decelerationDistance = \frac{1}{2} * maxDeceleration * decelerationTime^{2} $$
+$$accelerationDistance = \frac{1}{2} \cdot \text{maxAcceleration} \cdot \text{accelerationTime}^{2}$$
+$$decelerationDistance = \frac{1}{2} \cdot \text{maxDeceleration} \cdot \text{decelerationTime}^{2}$$
 
-If $ (accelerationDistance + decelerationDistance) < commandDistance $ we can apply this profile; otherwise, we won't have enough time to execute the constant speed phase and will proceed with a triangular speed profile.
+If $(accelerationDistance + decelerationDistance) < \text{commandDistance}$,  we can apply this profile; otherwise, we won't have enough time to execute the constant speed phase and will proceed with a triangular speed profile.
 
 Finally, we can calculate the distance to be covered during the constant speed phase:
 $$ constantspeedDistance = commandDistance - accelerationDistance - decelerationDistance $$ 
@@ -59,13 +60,20 @@ Unknown variables :
 
 Then we can formulate the following equations from the problem:
 
-$$ \begin{cases}  v_1 = a_1 * t_1 \\ v_2 = a_2 * (t_2-t_1) + v_1 = 0 \\ d_1 = \frac{1}{2} * a_1 * t_1^{2} \\ d_2 - d_1 = \frac{1}{2} * a_2 * (t_2 - t_1)^{2} + v_1 * (t_2 - t_1) \end{cases} $$
+$$
+\begin{cases}  
+v_1 = a_1 \cdot t_1 \\ 
+v_2 = a_2 \cdot (t_2 - t_1) + v_1 = 0 \\ 
+d_1 = \frac{1}{2} \cdot a_1 \cdot t_1^{2} \\ 
+d_2 - d_1 = \frac{1}{2} \cdot a_2 \cdot (t_2 - t_1)^{2} + v_1 \cdot (t_2 - t_1) 
+\end{cases}
+$$
 
 We have 4 unknown variables and 4 equations, therefore we should be able to solve this system.
 
 For better readability, let's define $\tau = t_2 - t_1 $ as the unknown we are searching for.
 
-$$\Leftrightarrow \begin{cases} v_1 = a_1 * t_1 \\ v_2 = a_2 * \tau + v_1 = 0\\ d_1 = \frac{1}{2} * a_1 * t_1^{2} \\ d_2 - d_1 = \frac{1}{2} * a_2 * \tau^{2} + v_1 * \tau \end{cases}$$
+$$\Leftrightarrow \begin{cases} v_1 = a_1 \cdot t_1 \\ v_2 = a_2 \cdot \tau + v_1 = 0\\ d_1 = \frac{1}{2} \cdot a_1 \cdot t_1^{2} \\ d_2 - d_1 = \frac{1}{2} \cdot a_2 \cdot \tau^{2} + v_1 \cdot \tau \end{cases}$$
 
 
 Now let's solve this system : 
@@ -80,14 +88,24 @@ $$ \implies d_2 = -\frac{a_2}{2} * \tau^{2} - \frac{a_2}{2} * \tau * t_1  $$
 
 $$ \Leftrightarrow d_2 = -\frac{a_2}{2} * (\tau^{2} + \tau * t_1)  $$
 
-$$\Leftrightarrow \begin{cases} (a_1 + a_2) * \tau - a_1 * t_2 = 0 \\ \frac{a_2}{2} * t_2 = d_2 \end{cases}$$
+$$
+\Leftrightarrow \begin{cases} 
+(a_1 + a_2) \cdot \tau - a_1 \cdot t_2 = 0 \\ 
+\frac{a_2}{2} \cdot t_2 = d_2 
+\end{cases}
+$$
 
 
-$$\Leftrightarrow \begin{cases} t_2 = \frac{a_1 + a_2}{a_1} * \tau \\ \frac{a_2}{2} * \tau * t_2 = d_2 \end{cases}$$
+$$
+\Leftrightarrow \begin{cases} 
+t_2 = \frac{a_1 + a_2}{a_1} \cdot \tau \\ 
+\frac{a_2}{2} \cdot \tau \cdot t_2 = d_2 
+\end{cases}
+$$
 
 $$ l_1 \rightarrow l_2 \implies d_2 = \frac{a_2}{2*a_1} * (a_1 + a_2) * \tau^{2} $$
 
-$$\implies \tau = \sqrt{ \frac{2*d_2*a_1}{a_2*(a_1+a_2)} }$$
+$$\tau = \sqrt{ \frac{2d_2a_1}{a_2(a_1+a_2)} }$$
 
 If necessary, we can also determine the maximum speed $v_1$​ now.
 
