@@ -6,7 +6,10 @@
 
 To achieve smooth acceleration and braking, thus preventing slippage, we can implement speed control using a trapezoidal speed profile characterized by three phases: acceleration, constant speed when the maximum authorized speed is reached, and deceleration. I have modeled the profile on GeoGebra to gain a better understanding of the required actions.
 
-<iframe src="https://www.geogebra.org/calculator/n7wgewmr?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+[My geogebra modelisation : https://www.geogebra.org/m/n7wgewmr](https://www.geogebra.org/m/n7wgewmr)
+
+
+<img src="Report's images\Session12\trapezoidal_speed_profile.png" width="800">
 
 Firstly, we can calculate the duration of the acceleration phase and the deceleration phase using our data.
 
@@ -36,7 +39,9 @@ The main challenge in implementing this triangular profile is that, unlike befor
 
 To better understand the problem, I modeled it in GeoGebra, so you can visualize it below, where $\tau$ represents the deceleration time we are searching for:
 
-<iframe src="https://www.geogebra.org/calculator/q3h9c6sb?embed" width="700" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+[My geogebra modelisation : https://www.geogebra.org/m/q3h9c6sb](https://www.geogebra.org/m/q3h9c6sb)
+
+<img src="Report's images\Session12\triangle_speed_profile.png" width="800">
 
 We define the following variables : 
 
