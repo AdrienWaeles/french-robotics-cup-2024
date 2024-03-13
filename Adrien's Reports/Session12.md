@@ -14,7 +14,7 @@ $$ accelerationTime = maxSpeed / maxAcceleration $$
 $$ decelerationTime = maxSpeed / maxDeceleration $$
 
 Now, we can deduce the distance traveled during these durations using the kinematic equation for uniformly accelerated motion, which is: 
-$Displacement = InitialPosition+ \frac{1}{2} ​* Acceleration * t^{2} $
+$$Displacement = InitialPosition+ \frac{1}{2} ​* Acceleration * t^{2} $$
 
 Thus :
 $$ accelerationDistance = \frac{1}{2} * maxAcceleration * accelerationTime^{2}$$
