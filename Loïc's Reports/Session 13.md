@@ -73,3 +73,38 @@ The DWM1001-DEV module is a bit particular because it has to be placed on the to
 
     The DWM1001-DEV module mounted on the support
 </div>
+
+### Actuator
+The goal of the ladybug is to pollinate the plants we placed with the main robot. According to the rules of the competition, a plant is pollinated when the ladybug touches it. To do so, I will use a small servo motor to move a kind of arm. The arm will be placed on the front of the robot. Here is the result :
+
+<div align="center">
+    <img src="src/session_13/actuator.png" width="500px">
+
+    The servo motor placed under the ladybug in the chassis
+</div>
+<div align="center">
+    <img src="src/session_13/actuator2.png" width="500px">
+
+    The arm of the actuator mounted on the servo motor
+</div>
+<div align="center">
+    <img src="src/session_13/actuator3.png" width="500px">
+
+    The actuator (Front view)
+</div>
+
+### Emergency stop button
+The last component I had to place on the chassis is the emergency stop button. I placed it on the top of the robot, between the ultrasonic sensors so it is very accessible by the referee in case of emergency. Here is the result :
+
+<div align="center">
+    <img src="src/session_13/button.png" width="500px">
+
+    The emergency stop button mounted on the chassis
+</div>
+
+### Fabrication
+Now that the ladybug is fully designed, I can start the fabrication. All the grey parts on the pictures above will be 3D printed because this process is quick and easy. 3D printing also has the advantage of being quite precise, afordable compared to CNC machining and it allows to create complex shapes (like the chassis). Because my design is experimental, 3D printing is the best option to test and iterate quickly.
+
+## Next session
+- Print the parts
+- Adjust some parts of the main robot
