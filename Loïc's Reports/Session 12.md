@@ -89,5 +89,10 @@ Then I added to the chassis the DC motor, the servo motor for the direction and 
 <div align="center">
     <img src="src/session_12/chassis4.png" alt="Chassis" width="700px">
 
-    Chassis with the DC motor, the servo motor and the wheels
+    Chassis with the DC motor, the servo motor and the wheels (Bottom view)
+</div>
+<div align="center">
+    <img src="src/session_12/chassis5.png" alt="Chassis" width="700px">
+
+    Chassis with the DC motor, the servo motor and the wheels (Top view)
 </div>
