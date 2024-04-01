@@ -66,4 +66,28 @@ Here are the components I found on the internet ([GrabCAD]('https://grabcad.com/
 </div>
 
 ### Chassis
-For the chassis, I modeled it as compact and simple as possible. I designed it so that the DC motor is inside the chassis, so that its mass serves to stabilize the ladybug. Here is the design I came up with:
+For the chassis, I modeled it as compact and simple as possible. I designed it so that the DC motor is inside the chassis, so that its mass serves to stabilize the ladybug. The structure of the chassis is very rigid because of its geometry, when can see some holes on the top which are made to screw the other parts on it. Here is the design I came up with:
+
+<div align="center">
+    <img src="src/session_12/chassis.png" alt="Chassis" width="700px">
+
+    Chassis (Top view)
+</div>
+<div align="center">
+    <img src="src/session_12/chassis2.png" alt="Chassis" width="700px">
+
+    Chassis (Bottom view)
+</div>
+<div align="center">
+    <img src="src/session_12/chassis3.png" alt="Chassis" width="700px">
+
+    Chassis (front view)
+</div>
+
+Then I added to the chassis the DC motor, the servo motor for the direction and the wheels. A small wheel is mounted on a fork which is attached to the servo motor. In order to transmit the rotational power from the DC motor to the wheels, I designed a small gear system. The gear ratio is 1:1, so the wheels will rotate at the same speed as the DC motor which is already designed at the right speed. The wheels might be a little bit too much apart but I will see this detail later. Here is the chassis with the motors and the wheels:
+
+<div align="center">
+    <img src="src/session_12/chassis4.png" alt="Chassis" width="700px">
+
+    Chassis with the DC motor, the servo motor and the wheels
+</div>
