@@ -96,3 +96,7 @@ Then I added to the chassis the DC motor, the servo motor for the direction and 
 
     Chassis with the DC motor, the servo motor and the wheels (Top view)
 </div>
+
+## Next session
+- Continue the ladybug robot
+- Adjust some parts of the main robot
