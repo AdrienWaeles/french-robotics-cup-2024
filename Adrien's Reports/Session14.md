@@ -45,7 +45,7 @@ The difference between the two functions is that the first one will process thes
 3) get_errors() which calls the two functions above to process the errors calculus (difference between theorical speed/position and real speed/position).
 $$ errorDistance = \sqrt{( (Xtheorical - Xreal)² + (Ytheorical - Yreal)²} ) $$ euclidean norm to determine the distance between the points (Xtheorical, Ytheorical) and (Xreal, Yreal).
 
-$$ errorAngle = atan2(Ytheorical - Yreal, Xtheorical - Xreal) - Zreal $$ trigonometric relation where atan2 is a mathematical function which process to arctan of the first paramater divided by the second one.
+$$ errorAngle = atan2(Ytheorical - Yreal, Xtheorical - Xreal) - Zreal $$ trigonometric relation where atan2 is a mathematical function which processes to arctan of the first paramater divided by the second one.
 
 These two variables are used to calculate the errors we will use in our pid correction : 
 $$ errorXY = errorDistance * cos(errorAngle) $$
