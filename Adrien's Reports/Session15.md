@@ -1,4 +1,4 @@
-# Session report 14: March 29, 2024
+# Session report 15: March 29, 2024
 
 **Session objective:** Enable 2 movements trajectory to reach any coordinates on the playfield. Switch from an Arduino to an ESP32 on the robot. Find new lenses for our cameras.
 
