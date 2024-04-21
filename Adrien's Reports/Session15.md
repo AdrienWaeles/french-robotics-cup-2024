@@ -5,7 +5,7 @@
 ## Finding new lenses for our cameras
 One of the main problems at Eurobot's competition, is wifi waves interferences. So we were worried about that by positionning a camera on the calculation zone support, cause our communications would be easily disrupted or delayed. As our cameras are the main sensors from the robot, we decided for safety reasons to put all cameras on the robot. But the lenses provided with JevoisPro cameras have an angle near 60° so even with our 4 cameras we wouldn't be able to cover 360°.
 
-To solve this, we decided to change our lenses for 120° wide angle ones. Of course with 4 cameras we will have redundancy, but 
+To solve this, we decided to change our lenses for 120° wide angle ones. Of course with 4 cameras we will have redundancy, but as our cameras will be tilted towards the 
 
 ## Take in hand the ESP32 chip to replace our Arduino Mega with a more powerful chip
 I chosed to replace the Arduino Mega for an ESP32 for many reasons : 
@@ -17,8 +17,6 @@ First i wanted to be able to programm it with Arduino IDE, to be able to do this
 Finally with both package and driver installed, we can easily upload code to it by selectionning the board and COM port in the Arduino menu.
 Be awared that it's only possible to upload a code on it while it's in boot mode.
 
-
-## 2 movements trajectories
 
 
 ## Next session tasks

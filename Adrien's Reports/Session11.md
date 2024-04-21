@@ -1,51 +1,45 @@
 # Session report 11: March 05, 2024
 
-**Session objective:** Learn more about PID to improve our closed loop control model, implement trapezoidal speed profiles, make researches about robot trajectories.
+**Session objective:** Learn more about PID to enhance our closed-loop control model, implement trapezoidal speed profiles, and conduct research on robot trajectories.
 
-## Researches about PID
-Previously i had issues with finding the optimum PID coefficients, so i took time to do more researches and i learned many things. All the articles which have led me to this conclusions will be linked in the cources section at the end of the document.
+## Research on PID
+Previously, I encountered issues with finding the optimum PID coefficients, so I dedicated time to conducting further research. Through this process, I gained valuable insights. All the articles that contributed to these conclusions will be linked in the sources section at the end of the document.
 
-- First of all, if my motors don't have enough power in the end to reach the final position it's cause the integral coefficient is not big enough. Indeed when the error becomes too small, the proportionnal corrector can almost no longer correct it cause it will be the multiplication of a number tending towards 0 by Kp. Then the only way to correct this is catching up with an integral which will see its effect be strongly increased in steady-state.
+- Firstly, if my motors lack sufficient power to reach the final position, it may be due to the integral coefficient not being large enough. When the error becomes very small, the proportional corrector can struggle to make significant adjustments, as it essentially multiplies a number approaching zero by Kp. In such cases, the only effective correction method is to rely on the integral term, which will see its impact significantly amplified in steady-state.
 
-- I learned the importance of choosing the best sampling frequency. Sampling frequency is used to work with a constant intervall of time used to takes measurements from the encoders and apply correction with a PID.
-We would be tempted to put a very high frequency or even using a continous model rather than discret to increase precision but this is a big mistake. Indeed, by increasing this number, we will apply correction more often but on less precise measures as our encoder measured steps at sampling frequency will be inferior for a same distance.
-On the other hand, if sampling frequency is to low, our correction will be applied not enough regularly and then we will our command will be jerky
+- I also learned about the importance of selecting the optimal sampling frequency. The sampling frequency determines the interval at which measurements are taken from the encoders and corrections are applied with a PID controller. While it may be tempting to use a very high frequency to increase precision, this approach can lead to inaccuracies. Higher frequencies result in corrections being applied more frequently, but on less precise measurements, as the number of encoder steps measured at the sampling frequency will be lower for the same distance. Conversely, if the sampling frequency is too low, corrections will not be applied regularly enough, resulting in jerky movements.
 
-## Trajectory planning
-There are multiples itineraries to send the robot from a point to another, so i made researches to identify which one would be the best in our case.
+- Finally, in the context of simple movements such as translations and rotations in robotics, it is common to use trapezoidal speed profiles. These profiles consist of a constant acceleration phase, followed by a phase of constant speed once the maximum speed is reached, and finally, a constant deceleration phase. This approach facilitates smooth movements and helps ensure precise odometry by minimizing slippage.
+
+## Trajectory Planning
+There are multiple routes to send the robot from one point to another, so I conducted research to identify the most suitable one for our case.
 
 ### 1. Circular Arcs:
-The robot follows arcs of circles and straight lines to create a continuous trajectory.
-Mathematically simple but has C1 discontinuities, leading to acceleration issues.
-Risks associated with centrifugal force during high-speed arc changes.
+The robot follows arcs of circles and straight lines to form a continuous trajectory. While mathematically straightforward, it exhibits C1 discontinuities, which can cause acceleration issues. Additionally, there are risks associated with centrifugal force during high-speed arc changes.
 
 ### 2. Bezier Curves:
-Aesthetically pleasing and continuous (C1).
-Mathematical complexity makes path planning challenging.
-Dismissed due to mathematical difficulties.
+A promising alternative due to their continuity (C1), but their mathematical complexity poses challenges in path planning. Dismissed due to the difficulties involved.
 
 ### 3. Clothoids:
-A clothoid is a mathematical curve characterized by a linear increase in curvature, forming a spiral-like shape. It is commonly used in trajectory planning for its smooth and continuous curvature changes, making it mechanically advantageous, particularly in applications like road design and robotics. We would avoid acceleration discontinuities. But it's really a lot of mathematical.
-Mechanically practical, despite the need for some approximations.
-A succession of clothoid arcs is chosen as the curved trajectory for the robot.
+A clothoid is a mathematical curve known for its linear increase in curvature, resembling a spiral shape. It is frequently employed in trajectory planning due to its smooth and continuous curvature changes, offering mechanical advantages, especially in robotics. Opting for a sequence of clothoid arcs ensures a curved trajectory for the robot, helping to avoid acceleration discontinuities and ensuring feasibility.
 
 <img src="Report's images\Session11\clothoid.png" width="250">
 
-### 4. Rotation followed by a translation
-Finally, after watching some videos from the past years, i noticed that most teams avoid curves trajectories (due to the complexity involved) and choose to work with a succession of a rotation and a translation both independants to reach the wanted point. It may seems not optimum but even the best teams use this method and have excellent results cause they reduce errors on position and centrifuge problems and as distances are shorts the difference in time between this and the previous methods is not considerable.
-So I decided to use this method for this year considering the remaining time before the competition (only 2 months).
+### 4. Rotation followed by translation
+After reviewing robotics cup replays from past years, I observed that most teams opt to avoid curved trajectories due to their complexity. Instead, they choose to use a sequence of independent rotations and translations to reach the desired points. While this approach may not seem optimal, even top-performing teams utilize it and achieve excellent results because it minimizes errors in position and centrifugal problems. Additionally, since distances to travel are relatively short in this competition, the difference in time between this method and previous ones is negligible. Therefore, considering the limited time remaining before the competition (only 2 months), I have decided to adopt this method for this year.
 
 
 ## Trapezoidal speed command
-I spent the end of the session implementing a trapezoidal speed command to avoid wheels spinning at the start of the robot but also at the end to not exceed the setpoint.
-I explored many algorithms before choosing to find the most accurate and easy to implement, i learned from the experience of the Cubot Team which have shared their experience on their github.
+I dedicated the end of the session to researching how to implement a trapezoidal speed command to prevent wheel spinning both at the start and end of the robot's movement, ensuring that the setpoint is not exceeded. I explored various algorithms before selecting the most accurate and easy-to-implement method. Drawing from the experience of the Cubot Team, who generously shared their insights on their GitHub repository, I learned that this can be achieved by calculating the duration of each phase using kinematic equations, along with parameters such as maximum allowed speed, acceleration, deceleration coefficients and the target distance. With these durations determined, we can then determine the appropriate speed to send to each motor to reach the desired position throughout the three phases.
 
 ## **Next session tasks:**
-In the upcoming session, i will finish the odometry of the robot and implement trajectories to send him to coordinates on the table with the correct trapezoidal speed profile.
+In the upcoming session, I will implement trajectories to navigate coordinates and reach any point on the table. Additionally, I will simultaneously implement the trapezoidal speed profile.
 
 ## Sources :
-https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/Cubot-atelier_asservissement.pdf
+https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/totofweb-PID_r%C3%A9gulation_de_position_vitesse.pdf
 
 https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/TechTheTroll-trajectoire_courbe.pdf
 
-https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/totofweb-PID_r%C3%A9gulation_de_position_vitesse.pdf
+https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/Cubot-atelier_asservissement.pdf
+
+Cloithoid image from : https://en.wikipedia.org/wiki/Euler_spiral

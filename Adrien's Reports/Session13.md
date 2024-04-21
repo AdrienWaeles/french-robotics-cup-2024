@@ -8,7 +8,7 @@ I implemented the speed profile from the previous session divided in two main fu
 This function takes in entry the remaining distance to travel, and the distance to travel during both constant speed and deceleration phases and returns speed_target, the speed we want the robot to reach.
 It will be called each time before applying PID so depeding on the sample frequency.
 
-An enum variable indicate the current speed phase which can be STATIONARY, ACCELERATION, CONSTANT_SPEED or DECELERATION.
+An enum variable indicates the current speed phase which can be STATIONARY, ACCELERATION, CONSTANT_SPEED or DECELERATION.
 
 Here is how it works : 
 1) STATIONARY phase : 

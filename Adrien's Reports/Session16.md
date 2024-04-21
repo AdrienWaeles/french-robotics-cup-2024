@@ -2,6 +2,8 @@
 
 **Session objective:** Switch from the Arduino Mega to an ESP32 on the robot. Etablish a connection between the Nvidia Jetson and the cameras. Optimize the closed loop control algorithm by setting a timer on the ESP32 to sample.
 
+## Communication in USB between our cameras and the Nvidia Jetson
+
 ## Problem with serial communication with ESP32
 After successfully transfering the program to the ESP32, it was constantly rebooting as the following message was continously printed on the console : 
 
@@ -20,6 +22,7 @@ After some researchs i found out that on a classic ESP32 there are 6 pins which 
 ## Test of an encoder with ESP32
 Then I wired an Encoder to the ESP32 to verify it is still working as ESP32 works only with 3.3V signals so it may be incompatible with some numerical devices if they threashold is superior at 3.3V.
 <img src="Report's images\Session16\ESP32_encoder_wiring.jpg" width="400">
+
 
 ## Next session tasks
 We have finally received all the components to be able to assemble the final version of the robot, so next session should be fully consacred to the calibration of the PID and optimizing the robot's displacements. Finally i will implement curved trajectories which will be necessary to avoid obstacles properly without loosing too much time.
