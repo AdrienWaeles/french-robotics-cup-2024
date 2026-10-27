@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+*.swp
+*~
+.idea/
+
+# Arduino / PlatformIO build
+build/
+.pio/
+*.elf
+*.hex
+
+# Misc
+__pycache__/
+.venv/
+.env
+*.log
