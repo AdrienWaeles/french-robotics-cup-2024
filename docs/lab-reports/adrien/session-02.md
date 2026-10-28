@@ -15,15 +15,15 @@ First of all, I established an ordered list of my next tasks to do to enhance ef
 
 As the coding wheels are still in the design phase, I have decided to prioritize continuing work on determining the maximum acceleration. This way, this aspect will be prepared for implementation once the rolling base is ready to conduct physics measurements.
 
-## Measuring the buckling of the wheels and the play in the motor.
+## Measuring the runout of the wheels and the play in the motor.
 
-During the previous session, we observed lateral vibrations in the wheels. Therefore, this time, using a dial indicator, I measured the buckling of the wheels.
+During the previous session, we observed lateral vibrations in the wheels. Therefore, this time, using a dial indicator, I measured the runout of the wheels.
 
 <img src="assets/session-02/Dial-Indicator_howItWorks_fromExtruDesign.png" width="300">
 
-To use this tool, we have to magnetize it to a fixed surface to prevent shaking. Then, we simply position the plunger against the external surface of the wheel. Next, we delicately turn the wheel one complete revolution (or multiple turns for more precision). Afterward, we read the buckling on the graduated scale and divide it by the number of turns made. The precision of this instrument is approximately 0.01mm, which corresponds to the space between two marks on the scale.
+To use this tool, we have to magnetize it to a fixed surface to prevent shaking. Then, we simply position the plunger against the external surface of the wheel. Next, we delicately turn the wheel one complete revolution (additional turns only confirm the reading). Afterward, we read the runout on the graduated scale: it is the difference between the highest and the lowest reading during this revolution. The precision of this instrument is approximately 0.01mm, which corresponds to the space between two marks on the scale.
 
-With this tool, I measured a buckling of approximately 1mm per wheel, which is not insignificant but much less than I expected. Therefore, I believe it won't pose a significant obstacle to achieving precise odometry at the outset. That's why we have decided to retain these wheels, and we will consider replacing them with more precise ones only if they prove inadequate.
+With this tool, I measured a runout of approximately 1mm per wheel, which is not insignificant but much less than I expected. Therefore, I believe it won't pose a significant obstacle to achieving precise odometry at the outset. That's why we have decided to retain these wheels, and we will consider replacing them with more precise ones only if they prove inadequate.
 
 ## Encoder and reflections on coding wheels
 

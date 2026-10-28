@@ -25,6 +25,9 @@ As explained in the previous report, our damaged magnet was not producing the sa
 <img src="assets/session-07/Replacing_defective_magnet.jpg" width="250">
 
 
+## Shortening the motor shaft
+I cut the end of the motor shaft that originally carried the encoder magnet. This shortens the motor + gearbox assembly (so the wheels sit further inside) and removes the unused shaft stub, which made it possible to align the motor, the drive wheel and the coding wheel exactly.
+
 ## Minimizing the play in the wheel assembly.
 Last but not least as our wheel shaft was rubbing against our encoder, I minimized the play in our wheel assembly to allow more space between our wheel assembly and encoder, to avoid damaging it, by gluing a loose ball bearing. 
 

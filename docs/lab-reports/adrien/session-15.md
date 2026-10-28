@@ -17,7 +17,7 @@ I chose to replace the Arduino Mega for an ESP32 for many reasons:
 First, we need to install the USB driver, its name can be easily identified in the Windows Device Manager and then we can download it from the internet.
 I wanted to be able to program it with the Arduino IDE, so to be able to do this, I searched for the ESP32 board package by Espressif in the Arduino software. 
 Finally with both package and driver installed, we can easily upload code to it by selecting the board and COM port in the Arduino menu.
-Be aware that it's only possible to upload a code on it while it's in boot mode. So, to exit boot mode, on some ESP32, you need to press the boot button for few seconds while the program is being uploaded.
+Be aware that it's only possible to upload a code on it while it's in boot mode. So, to enter boot mode, on some ESP32, you need to press the boot button for few seconds while the program is being uploaded.
 
 ## Recalibrate the robot's odometry
 As a new version of the rolling base has been assembled, I had to recalibrate the odometry to be able to continue working on the displacements algorithm. To do this, I first recalibrated the robot for rotations, by reading the values from each encoder after manually doing a 360° rotation around a nail (thanks to a wood calibration part temporarily fixed on the robot which has a hole at the kinematic center of the robot). 

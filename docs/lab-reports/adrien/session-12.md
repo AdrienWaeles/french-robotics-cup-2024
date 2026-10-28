@@ -98,26 +98,26 @@ $$ \Leftrightarrow d_2 = -\frac{a_2}{2} * (\tau^{2} + \tau * t_1)  $$
 
 $$
 \Leftrightarrow \begin{cases} 
-(a_1 + a_2) \cdot \tau - a_1 \cdot t_2 = 0 \\ 
-\frac{a_2}{2} \cdot t_2 = d_2 
+(a_1 - a_2) \cdot \tau - a_1 \cdot t_2 = 0 \\ 
+-\frac{a_2}{2} \cdot \tau \cdot t_2 = d_2 
 \end{cases}
 $$
 
 
 $$
 \Leftrightarrow \begin{cases} 
-t_2 = \frac{a_1 + a_2}{a_1} \cdot \tau \\ 
-\frac{a_2}{2} \cdot \tau \cdot t_2 = d_2 
+t_2 = \frac{a_1 - a_2}{a_1} \cdot \tau \\ 
+-\frac{a_2}{2} \cdot \tau \cdot t_2 = d_2 
 \end{cases}
 $$
 
-$$ l_1 \rightarrow l_2 \implies d_2 = \frac{a_2}{2*a_1} * (a_1 + a_2) * \tau^{2} $$
+$$ l_1 \rightarrow l_2 \implies d_2 = -\frac{a_2}{2*a_1} * (a_1 - a_2) * \tau^{2} $$
 
-$$\tau = \sqrt{ \frac{2d_2a_1}{a_2(a_1+a_2)} }$$
+$$\tau = \sqrt{ \frac{2d_2a_1}{-a_2(a_1-a_2)} }$$
 
 If necessary, we can also determine the maximum speed $v_1$ now.
 
-$$ v_1 = a_2 * \tau $$
+$$ v_1 = -a_2 * \tau $$
 
 Important note: In our calculations, we considered $a_2$ as a negative value.
 
@@ -126,9 +126,9 @@ I have also incorporated basic calculations into my code to track the absolute p
 
 $$ Z_{position} = Z_{previousposition} + angle_{travelled} $$
 $$ X_{position} = X_{previousposition} + (distance_{travelled} * cos(Z_{position})) $$
-$$ Y_{position} = X_{previousposition} + (distance_{travelled} * sin(Z_{position})) $$
+$$ Y_{position} = Y_{previousposition} + (distance_{travelled} * sin(Z_{position})) $$
 
-And $Z_{position}$ will always be reduced to a value between $-2*\pi$ and $2*\pi$ 
+And $Z_{position}$ will always be reduced to a value between $-\pi$ and $\pi$ 
 
 Thus, I am able to obtain the absolute position of the robot on the table in real-time, regardless of its trajectory.
 
