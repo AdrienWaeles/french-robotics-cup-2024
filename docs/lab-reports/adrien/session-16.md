@@ -3,10 +3,10 @@
 **Session objective:** Switch from the Arduino Mega to an ESP32 on the robot. Establish a connection between the Nvidia Jetson and the cameras. Optimize the closed loop control algorithm by setting a timer on the ESP32 to sample.
 
 ## Communication in USB between our cameras and the Nvidia Jetson
-The first step to use our cameras on our robot was to establish a connection between our four cameras and the Nvidia Jetson so we are able to send commands to the cameras to configure them and above all receive their processed data. As the Jetson has four USB ports, it was easier 
+The first step to use our cameras on our robot was to establish a connection between our four cameras and the Nvidia Jetson so we are able to send commands to the cameras to configure them and above all receive their processed data.
 
 I then followed a tutorial written by JeVois, the manufacturer of our cameras: http://jevois.org/doc/USBserialLinux.html
-To connect a camera to the Linux host provided on the Jetson using serial-over-USB, I first identified the device's port used by the camera with the command ```dmesg``` or ```lsusb```. Then I added permissions by adding my user profile to the dialout group with the command ```sudo usermod -aG dialout $USER$```. To avoid interference from the ModemManager program, which probes new serial devices, I also disabled the ModemManager  ```sudo killall ModemManager```. Then I was able to use serial communication with the application ```minicom``` (after installing it with ```pip install minicom```) and send configuration instructions to the camera.
+To connect a camera to the Linux host provided on the Jetson using serial-over-USB, I first identified the device's port used by the camera with the command ```dmesg``` or ```lsusb```. Then I added permissions by adding my user profile to the dialout group with the command ```sudo usermod -aG dialout $USER```. To avoid interference from the ModemManager program, which probes new serial devices, I also disabled the ModemManager  ```sudo killall ModemManager```. Then I was able to use serial communication with the application ```minicom``` (after installing it with ```sudo apt install minicom```) and send configuration instructions to the camera.
 
 ## Problem with serial communication with ESP32
 After successfully transferring a program to the ESP32, it was constantly rebooting as the following message was continuously printed on the console: 

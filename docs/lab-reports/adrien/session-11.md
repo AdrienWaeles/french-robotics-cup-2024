@@ -15,7 +15,7 @@ Previously, I encountered issues with finding the optimum PID coefficients, so I
 There are multiple routes to send the robot from one point to another, so I conducted research to identify the most suitable one for our case.
 
 ### 1. Circular Arcs:
-The robot follows arcs of circles and straight lines to form a continuous trajectory. While mathematically straightforward, it exhibits C1 discontinuities, which can cause acceleration issues. Additionally, there are risks associated with centrifugal force during high-speed arc changes.
+The robot follows arcs of circles and straight lines to form a continuous trajectory. While mathematically straightforward, it exhibits curvature discontinuities (the curvature jumps from 0 on a straight line to 1/R on an arc of radius R), which can cause acceleration issues. Indeed, the lateral acceleration is $a = v^2/R$, so it also jumps instantly from 0 to $v^2/R$ at each junction: the speed difference between the left and right wheels would have to change instantly, which is impossible because of the motors' inertia, so the robot slips or deviates from its trajectory. Additionally, there are risks associated with centrifugal force during high-speed arc changes.
 
 ### 2. Bezier Curves:
 A promising alternative due to their continuity (C1), but their mathematical complexity poses challenges in path planning. Dismissed due to the difficulties involved.

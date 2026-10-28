@@ -13,7 +13,7 @@ With low values of P, the system becomes stable very quickly.
 
 <img src="assets/session-09/P=2.png" width="250"> P = 2
 
-At P=3, the system was noticeably less stable but still exhibited a tendency towards stability.
+At P=3.5, the system was noticeably less stable but still exhibited a tendency towards stability.
 
 <img src="assets/session-09/P=3.5.png" width="250"> P = 3.5
 
@@ -40,7 +40,7 @@ When doing this rotation calibration I had many issues because I wasn't getting 
 ## Solution: a single print at the end
 I spent a considerable amount of time troubleshooting this issue, but we were ultimately able to identify the problem. Printing the values read by the encoders at each interruption significantly slowed down the program, leading to inaccurate values that were time-dependent. Instead of printing the number of ticks at each interruption, I implemented a new 'print' command, which displays the number of ticks for each encoder when called. After making this change, I could consistently read coherent values, which remained the same in each experiment.
 
-## Reducing the sampling frequence
+## Reducing the sampling period
 As our Arduino operates with digital signals, we need to sample our measurements. Previously, I had chosen a sampling time of 100ms, but for increased precision, I had to reduce this sampling time to 10ms.
 
 ## Next session tasks

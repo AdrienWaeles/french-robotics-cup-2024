@@ -9,6 +9,7 @@ This diagram will also be used by Teo Baillot, a member of the team who is in ch
 <img src="assets/session-17/Wiring_PolyMartian_bb.png" width="400">
 
 Two LiPo batteries are 3S 35C 2200mAh. 3S means the battery is made with 3 cells, so as each cell provides 3.7V, a 3S battery provides a voltage of 3*3.7V = 11.1V. So we put two batteries in series to obtain a voltage around 22V which is perfect for our DC motors. 
+Note that 3.7V is the nominal cell voltage: a cell reaches 4.2V when fully charged and should not be discharged below about 3.3V. So our two 3S batteries in series provide 25.2V when fully charged and should be recharged before dropping to about 19.8V.
 We decided to put two more LiPos in parallel as we want to be sure that we will have enough capacity and so if we have a problem with a pair of batteries the robot will be able to continue its work with the other two batteries.
 
 An emergency stop button is directly wired between the LiPos and the motors to be able to stop the robot at any time if a problem occurs during the competition.

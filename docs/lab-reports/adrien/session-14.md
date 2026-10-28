@@ -42,28 +42,30 @@ These two functions determine five parameters:
 
 ### Linear velocity of the robot:
 $$
-V = leftSpeed + rightSpeed
+V = \frac{leftSpeed + rightSpeed}{2}
 $$
 
 ### Angular velocity:
 $$
-W = rightSpeedTarget - leftSpeedTarget
+W = \frac{rightSpeed - leftSpeed}{b}
 $$
 
 ### Angle travelled (integral of the angular velocity):
 $$
-Z = previousZ + W
+Z = previousZ + W \cdot dt
 $$
 
 ### Distance travelled on x axis (integral of x component of linear speed):
 $$
-X = previousX + V \cdot \cos(Z)
+X = previousX + V \cdot \cos(Z) \cdot dt
 $$
 
 ### Distance travelled on y axis:
 $$
-Y = previousY + V \cdot \sin(Z)
+Y = previousY + V \cdot \sin(Z) \cdot dt
 $$
+
+where $b$ is the distance between the two wheels and $dt$ is the sampling period.
 
 The difference between the two functions is that the first one processes these operations with **theoretical values**, which are determined relative to the speed profile, while the second one processes them with **real speeds** determined using the encoders.
 

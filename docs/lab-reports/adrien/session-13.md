@@ -28,7 +28,7 @@ The main difficulty was due to rounding when performing divisions, indeed due to
 So a tip is to round all divisions down with the floor() function and then reduce numerical errors with the following procedure.
 
 1) First, we calculate the acceleration_time, deceleration_time, acceleration_distance, deceleration_distance using the formulas determined in the previous report.
-2) If acceleration_distance + deceleration_distance is inferior to distance_setpoint, then we have to recalculate the deceleration distance to fit with a triangle speed profile (see formula from previous report). Thus we have to calculate the maximal speed reached which is equal to the new deceleration_time multiplied by max_deceleration.
+2) If acceleration_distance + deceleration_distance is greater than distance_setpoint, then we have to recalculate the deceleration distance to fit with a triangle speed profile (see formula from previous report). Thus we have to calculate the maximal speed reached which is equal to the new deceleration_time multiplied by max_deceleration.
 3) Then we deduce the constant speed phase duration which is: 
     - equal to zero, in a triangle speed profile
     - equal to the distance_setpoint minus acceleration and deceleration distance, in a trapezoidal speed profile
