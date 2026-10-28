@@ -176,7 +176,7 @@ repository only contains their [lab reports](docs/lab-reports/).
 └── hardware/
     ├── mechanical/                     3D-printed parts (STL) and laser-cut plates (SVG)
     ├── electrical/                     Wiring diagram
-    └── bill-of-materials.txt           Material costs
+    └── bill-of-materials.md            Preliminary cost estimate
 ```
 
 ## Acknowledgements
