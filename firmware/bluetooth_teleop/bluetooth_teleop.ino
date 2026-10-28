@@ -1,17 +1,25 @@
-//variable encodeur
+// Manual control of a DC motor over Bluetooth.
+// A Bluetooth serial module is connected on SoftwareSerial (RX pin 6, TX pin 11,
+// 9600 baud). Sending 'A' followed by a number (0-255) sets the PWM command.
+// The motor speed is measured from the encoder as in dc_motor_rpm.
+// Note: pin 6 works as RX on an Uno; on a Mega, SoftwareSerial RX needs a
+// pin-change-interrupt pin (10-15, 50-53, A8-A15).
+
+// Encoder variables
 #define ENCODER_PIN 2
 #define ENCODER_N   20
-unsigned long T1 = 0, T2 = 0, T;
-bool MeasDone = 0;
+// Written by the interrupt: volatile so the compiler always reads them from memory
+volatile unsigned long T1 = 0, T2 = 0, T = 0;
+volatile bool MeasDone = 0;
 int Motor_RPM = 0;
-//variable bluetooth
+// Bluetooth variables
 #include<SoftwareSerial.h>
 #define RX 6
 #define TX 11
 #define LED 9
 SoftwareSerial BlueT(RX,TX);
 char Data;
-//variable moteur
+// Motor variables
 int mot1 = 3;
 int mot2 = 5;
 //int cod1 = 10;
@@ -48,12 +56,18 @@ void loop() {
   if (BlueT.available()){
     Data=BlueT.read();
   if (Data=='A') {
-    commande = BlueT.parseInt();
+    // analogWrite only uses the low 8 bits: keep the command in 0-255
+    commande = constrain(BlueT.parseInt(), 0, 255);
     //Serial.println(commande);
     }
   }
 
-  Motor_RPM = (60000000) / (T * ENCODER_N);
+  // Copy T with interrupts disabled: on an 8-bit AVR a 32-bit read is not atomic
+  noInterrupts();
+  unsigned long period = T;
+  interrupts();
+  // No pulse measured yet: avoid a division by zero
+  Motor_RPM = (period == 0) ? 0 : 60000000UL / (period * ENCODER_N);
   //Serial.print("Motor RPM: ");
   //Serial.println(Motor_RPM);
 
