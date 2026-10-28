@@ -2,7 +2,7 @@
 
 **Session objective:** Take our PID to the next level by avoiding common imperfections and delve into using our cameras for shape recognition.
 
-The PID algorithm created during the previous sessions was functional, but occasionally exhibited erratic behavior. To enhance it, I sought assistance from the excellent article 'Améliorer vos régulateurs PID' by the PM-Robotic team and the fantastic series of tutorials 'PID control' from the Matlab YouTube channel.
+The PID algorithm created during the previous sessions was functional, but occasionally exhibited erratic behavior. To enhance it, I sought assistance from the excellent article 'Améliorer vos régulateurs PID' by the PM-Robotix team and the fantastic series of tutorials 'PID control' from the MATLAB YouTube channel.
 
 ## Establish a proportional relationship between sample time and P, I, D coefficients.
 
@@ -14,7 +14,7 @@ As our error is calculated as follows: Error = DistanceSetpoint - DistanceTravel
 
 <img src="assets/session-10/Derivative_Kick_from_PMRobotixTeam.png" width="250">
 
-Source : PM Robotix team
+Source: PM Robotix team
 
 One solution is called 'Derivative on Measurement'; I explain it in the context of my algorithm:
 
@@ -38,30 +38,30 @@ Now that our derivative is no longer directly dependent on the Setpoint, we avoi
 ## Changing PID coefficients in real time
 To determine P, I, D coefficients, it can be really helpful to be able to modify our coefficients in real-time to visualize the evolution and influence of our modifications on the error. It's a great time-saver because it avoids restarting the program for each modification.
 
-However, there is a significant problem to be aware of. Instantly modifying the integral coefficient can create a bump in the output. When we multiply the I coefficient by the integration of the error, I coefficient is assumed to be constant. But this assumption is no longer valid if we modify it while the program is running. To solve this, we can simply include the I coefficient inside the integral. Now, I sum I×errorI×error to the integral term each time the output is corrected, rather than adding the error to the sum and multiplying it by I later.
+However, there is a significant problem to be aware of. Instantly modifying the integral coefficient can create a bump in the output. When we multiply the I coefficient by the integration of the error, I coefficient is assumed to be constant. But this assumption is no longer valid if we modify it while the program is running. To solve this, we can simply include the I coefficient inside the integral. Now, I sum I × error to the integral term each time the output is corrected, rather than adding the error to the sum and multiplying it by I later.
 
 ## Reset Windup
 This is one of the most frequent problems in PID implementation. Our system is not perfect because our motors are speed-limited. If we attempt to exceed this limit, our motors will saturate at their maximum speed, causing our system to become nonlinear. However, the main issue is that our integral term will continue to grow, assuming the motor speed is still increasing to correct the error faster. Finally, when our value drops below the saturation point, the integral term will be excessively high and unrelated to the actual error. As a result, the robot will deviate significantly from its setpoint.
 
-This problem is well-explained further in Matlab videos: Understanding PID Control Part 2: Expanding Beyond a Simple Integral.
+This problem is well-explained further in MATLAB videos: Understanding PID Control Part 2: Expanding Beyond a Simple Integral.
 
 To address this issue, the integral term is now increased only when there is no saturation, indicating that our motors are not operating at their maximum speed. In cases of saturation, correction is applied using only a proportional coefficient.
 
 
-## Set up our JeVois Pro camera for shapes recognition
+## Set up our JeVois Pro camera for shape recognition
 
 The main reason we chose these specific cameras is their integration of powerful chips, enabling us to process calculations directly from the camera and then transmit the results to our Nvidia Jetson Nano. This approach allows us to leverage the computational power on the Jetson Nano for real-time strategy elaboration with artificial intelligence.
 
-Getting acquainted with the camera was straightforward, as many programs come preinstalled on the camera chip with the Ubuntu operating system. After adjusting the focal length using the small wheel around the lens, I tested programs to recognize objects and Aruco markers.
+Getting acquainted with the camera was straightforward, as many programs come preinstalled on the camera chip with the Ubuntu operating system. After adjusting the focal length using the small wheel around the lens, I tested programs to recognize objects and ArUco markers.
 
 <img src="assets/session-10/objects_recognition_JeVoisProCamera.jpg" width="250">
 
-The provided software is highly comprehensive, allowing us to adjust camera settings and customize preinstalled programs based on our specific conditions, including parameters such as the size of our Aruco markers.
+The provided software is highly comprehensive, allowing us to adjust camera settings and customize preinstalled programs based on our specific conditions, including parameters such as the size of our ArUco markers.
 
 I achieved excellent results directly, as showcased in the following videos:
 
-Plants detection: https://youtube.com/shorts/sOcyxpt3ze8
-Aruco detection: https://youtube.com/shorts/fuHYHDNQBM0
+Plant detection: https://youtube.com/shorts/sOcyxpt3ze8
+ArUco detection: https://youtube.com/shorts/fuHYHDNQBM0
 
 This will significantly save us time, as we can use this algorithm to extract data from the cameras and transmit them to the Jetson, with just a need for some adaptations to fit our specific use.
 

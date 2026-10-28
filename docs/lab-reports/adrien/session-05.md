@@ -2,7 +2,7 @@
 
 **Session objective:** Assemble the pivot joints of the coding wheels and place the encoders in front of their axis.
 
-To ensure continuous contact between our coding wheels and the ground, we opted for a pivot joint between the wheel and the rolling base, equipped with holes to attach an encoder using spacers. During this session, I began assembling the joint designed by Loic in the previous sessions.
+To ensure continuous contact between our coding wheels and the ground, we opted for a pivot joint between the wheel and the rolling base, equipped with holes to attach an encoder using spacers. During this session, I began assembling the joint designed by Loïc in the previous sessions.
 
 ## Recover the spacers and magnets initially present at the end of the motor shaft.
 
@@ -20,7 +20,7 @@ This was very challenging because the magnets were likely assembled while hot. A
 
 ## Modeling and 3D printing a component for assembling magnets and metal rods together.
 
-We needed to position the magnets we recovered at the ends of our coding wheel metal rods. Gluing them together didn't seem like the best solution due to the rotational speed of the coding wheels. Losing the magnets during the competition would be dramatic, as it would prevent us from correcting our trajectories and tracking the robot's localization. Therefore, I decided to create a small 3D-printed part that will be used as a flush-link connection.
+We needed to position the magnets we recovered at the ends of our coding wheel metal rods. Gluing them together didn't seem like the best solution due to the rotational speed of the coding wheels. Losing the magnets during the competition would be dramatic, as it would prevent us from correcting our trajectories and tracking the robot's localization. Therefore, I decided to create a small 3D-printed part that will be used as a fixed connection.
 
 <img src="assets/session-05/3djoint_magnetmetalrod_1.png" width="200"><img src="assets/session-05/3djoint_magnetmetalrod_2.png" width="202">
 

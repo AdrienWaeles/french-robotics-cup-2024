@@ -112,7 +112,7 @@ $$
 
 ## Implementing the PID correction and sending commands to motors
 
-We can now create a function that applies **Proportional** and **Integral** (and eventually **Derivative**) coefficients to our errors to send the resulting command to the motors.  
+We can now create a function that applies **Proportional** and **Integral** (and possibly **Derivative**) coefficients to our errors to send the resulting command to the motors.  
 We need two different PIDs:
 - One for linear speed (`errorV`)
 - One for angular speed (`errorW`)

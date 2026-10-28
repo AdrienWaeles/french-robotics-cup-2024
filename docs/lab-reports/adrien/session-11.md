@@ -42,4 +42,4 @@ https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asserv
 
 https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/Cubot-atelier_asservissement.pdf
 
-Cloithoid image from : https://en.wikipedia.org/wiki/Euler_spiral
+Clothoid image from: https://en.wikipedia.org/wiki/Euler_spiral
