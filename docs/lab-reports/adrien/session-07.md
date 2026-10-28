@@ -1,4 +1,4 @@
-# Session report 7:
+# Session report 7: January 23, 2024
 
 **Session objective:** Finishing the creation of the playground to test our robot in competition conditions, assembling the driving wheels and encoding wheels with our new belts and springs.
 
@@ -38,5 +38,5 @@ Then we assembled the robot and we tested our rolling base with new belts, evert
 <img src="assets/session-07/robot_assembled_2.jpg" width="360">
 
 
-## **Next session tasks:**
+## Next session tasks
 Now that our rolling base is complete and fonctionnal, i will be able to implement the Proportional Integral Derivative (PID) algorithm i wrote so i will spend the next hours finding the correct coefficients and fixing bugs in the algorithm to be able to control precisely the robot and know perfectly his position. We will also glue the play mat to the table and fix planters and solar pannels to the playground table.

@@ -1,4 +1,4 @@
-# Session report 4:
+# Session report 4: December 12, 2023
 
 **Session objective:** Test the algorithm I wrote during the previous session, fix bugs, and implement new functionalities.
 
@@ -16,7 +16,7 @@ Whenever a character becomes available in the buffer, we read it and add it to t
 
 
 
-# Parsing the command to get input parameters
+## Parsing the command to get input parameters
 
 <img src="assets/session-04/code_readCommand.png" width="600">
 
@@ -33,6 +33,6 @@ Finally, we send our commands to the two motors using the motor commands functio
 
 
 
-## **Next session tasks:**
+## Next session tasks
 
 Before the next session, we should have completed the assembly of the new rolling base. This will enable me to implement my algorithm on the robot and calculate PID coefficients.

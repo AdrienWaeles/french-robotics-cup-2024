@@ -2,7 +2,7 @@
 
 **Session objective:** Develop equations to implement a trapezoidal speed profile for our robot and determine the absolute position of the robot.
 
-# Trapezoidal speed profile
+## Trapezoidal speed profile
 
 To achieve smooth acceleration and braking, thus preventing slippage, we can implement speed control using a trapezoidal speed profile characterized by three phases: acceleration, constant speed when the maximum authorized speed is reached, and deceleration. I have modeled the profile on GeoGebra to gain a better understanding of the required actions.
 
@@ -18,7 +18,7 @@ $$ decelerationTime = maxSpeed / maxDeceleration $$
 
 Now, we can deduce the distance traveled during these durations using the kinematic equation for uniformly accelerated motion, which is: 
 
-$$Displacement = InitialPosition+ \frac{1}{2} ​* Acceleration * t^{2}$$
+$$Displacement = InitialPosition+ \frac{1}{2} * Acceleration * t^{2}$$
 
 Thus :
 $$accelerationDistance = \frac{1}{2} \cdot \text{maxAcceleration} \cdot \text{accelerationTime}^{2}$$
@@ -36,7 +36,7 @@ $$constantspeedTime = \frac{constantspeedDistance}{\text{maxSpeed}}$$
 
 We are now almost ready to implement this profile in our robot. However, there are additional steps required to reduce rounding errors, but we will address those in the next session.
 
-# Triangle speed profile
+## Triangle speed profile
 Sometimes, the distance command may not be large enough to accommodate the entire trapezoidal speed profile, as we might not have sufficient time to reach the maximum speed. In such cases, we will need to forego the constant speed phase and proceed directly to the acceleration and deceleration phases, resulting in a triangular speed profile.
 
 The main challenge in implementing this triangular profile is that, unlike before, we do not know the maximum speed we will be able to reach. Therefore, I had to find a formula to determine the deceleration duration of this triangular speed profile, considering only the maximum acceleration and deceleration and the distance to be traveled.
@@ -115,13 +115,13 @@ $$ l_1 \rightarrow l_2 \implies d_2 = \frac{a_2}{2*a_1} * (a_1 + a_2) * \tau^{2}
 
 $$\tau = \sqrt{ \frac{2d_2a_1}{a_2(a_1+a_2)} }$$
 
-If necessary, we can also determine the maximum speed $v_1$​ now.
+If necessary, we can also determine the maximum speed $v_1$ now.
 
 $$ v_1 = a_2 * \tau $$
 
 Important note: In our calculus, we considered $a_2$ as a negative value.
 
-# Determining the absolute position of the robot
+## Determining the absolute position of the robot
 I have also incorporated basic calculus into my code to track the absolute position of the robot. Each time I sample my measurements, I calculate the distance traveled in centimeters and the angle traveled in radians during this short period. I then update three variables, X, Y, and Z, with basic trigonometry relations to represent the position. Here's how it works:
 
 $$ Z_{position} = Z_{previousposition} + angle_{travelled} $$

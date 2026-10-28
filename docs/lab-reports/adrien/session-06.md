@@ -1,4 +1,4 @@
-# Session report 5:
+# Session report 6: January 16, 2024
 
 **Session objective:** Test the rolling base with assembled belts, complete the assembly of the coding wheels, and then test them.
 
@@ -52,8 +52,8 @@ This is likely the reason why our encoder wasn't detecting variations on our new
 Since I couldn't find any documentation detailing the characteristics of the encoder's magnet for purchasing a replacement, I opted to contact the seller to inquire about this information. Eventually, they agreed to sell a new one independently.
 
 
-## **Next session tasks:**
+## Next session tasks
 Once we receive the new magnet and the appropriate belts, our rolling base should be complete. I will then proceed to test it, make any necessary improvements, and begin the process of determining the PID coefficients.
 
-## Sources 
+## Sources
 https://www.akm.com/eu/en/products/rotation-angle-sensor/tutorial/magnetic-encoder/

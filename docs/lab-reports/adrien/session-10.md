@@ -6,7 +6,7 @@ The PID algorithm created during the previous sessions was functional, but occas
 
 ## Establish a proportional relationship between sample time and P, I, D coefficients.
 
-"First of all, the initial issue was that I had established no link in my code between my P, I, D coefficients, and the sample time. So, even when I changed the sample time, I was still integrating and differentiating the error over the same time period. To avoid the need to adapt I and D correction coefficients after each modification of the sample time, I multiply my integral coefficient I at the beginning of the program by the sample time because we integrate error*dt. Similarly, I divide my derivative coefficient D by the sample time because we want to differentiate ${derror \over dt}$, where dt is the short period of time over which we are performing the operation.
+First of all, the initial issue was that I had established no link in my code between my P, I, D coefficients, and the sample time. So, even when I changed the sample time, I was still integrating and differentiating the error over the same time period. To avoid the need to adapt I and D correction coefficients after each modification of the sample time, I multiply my integral coefficient I at the beginning of the program by the sample time because we integrate error*dt. Similarly, I divide my derivative coefficient D by the sample time because we want to differentiate ${derror \over dt}$, where dt is the short period of time over which we are performing the operation.
 
 ## Avoid derivative kick
 
@@ -43,7 +43,7 @@ However, there is a significant problem to be aware of. Instantly modifying the 
 ## Reset Windup
 This is one of the most frequent problems in PID implementation. Our system is not perfect because our motors are speed-limited. If we attempt to exceed this limit, our motors will saturate at their maximum speed, causing our system to become nonlinear. However, the main issue is that our integral term will continue to grow, assuming the motor speed is still increasing to correct the error faster. Finally, when our value drops below the saturation point, the integral term will be excessively high and unrelated to the actual error. As a result, the robot will deviate significantly from its setpoint.
 
-This problem is well-explained further in Matlab videos: Understanding PID Control Part 2: Expanding Beyond a Simple Integral."
+This problem is well-explained further in Matlab videos: Understanding PID Control Part 2: Expanding Beyond a Simple Integral.
 
 To address this issue, the integral term is now increased only when there is no saturation, indicating that our motors are not operating at their maximum speed. In cases of saturation, correction is applied using only a proportional coefficient.
 
@@ -65,10 +65,10 @@ Aruco detection: https://youtube.com/shorts/fuHYHDNQBM0
 
 This will significantly save us time, as we can use this algorithm to extract data from the cameras and transmit them to the Jetson, with just a need for some adaptations to fit our specific use.
 
-## **Next session tasks:**
+## Next session tasks
 In the upcoming session, the PID correction will be fully implemented and configured, along with our odometry. I will focus on developing obstacle avoidance paths and establishing a method to transmit the output from our cameras to our main Nvidia Jetson Nano. This data will be utilized to inform decision-making strategies with artificial intelligence.
 
-## Sources :
+## Sources
 https://www.pm-robotix.eu/2022/02/02/asservissement-et-pilotage-de-robot-autonome/
 
 https://fr.mathworks.com/videos/understanding-pid-control-part-1-what-is-pid-control--1527089264373.html

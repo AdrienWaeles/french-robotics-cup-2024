@@ -4,7 +4,7 @@
 
 I implemented the speed profile from the previous session divided in two main functions :
 
-# Get_speed_target() 
+## Get_speed_target()
 This function takes in entry the remaining distance to travel, and the distance to travel during both constant speed and deceleration phases and returns speed_target, the speed we want the robot to reach.
 It will be called each time before applying PID so depeding on the sample frequency.
 
@@ -20,7 +20,7 @@ In this new phase, speed_target will remain constant to the maximal speed until 
 4) DECELERATION phase :
 We add the maximum deceleration (which is negative) to speed_target until reaching a value close to zero defined by a variable called precision. When the remaining distance is below the wanted precision, we can stop the robot with speed_target = 0 and switch to STATIONARY. Therefore we will avoid correcting error during a too long period of time to not loose too much time during the competition.
 
-# Get_phases_distance()
+## Get_phases_distance()
 This function is called one time after each new command and returns the distances to travel during the three trapezoidal phases depending on the following parameters : distance_setpoint, max_acceleration, max_deceleration and max_speed.
 
 The main difficulty was due to roundings when proceeding to divisions, indeed due to our encoders which have a finite number of points, we have a limited precision so we need to round our numbers to integers. Therefore when the distance value was rounded up the robot was exceeding the target.

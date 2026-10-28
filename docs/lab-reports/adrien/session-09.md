@@ -1,4 +1,4 @@
-# Session report 8: February 07, 2024
+# Session report 9: February 14, 2024
 
 **Session objective:** Address bugs in the odometry algorithm and incorporate PID coefficients.
 
@@ -43,5 +43,5 @@ I spent a considerable amount of time troubleshooting this issue, but we were ul
 ## Reducing the sampling frequence
 As our Arduino operates with digital signals, we need to sample our measurements. Previously, I had chosen a sampling time of 100ms, but for increased precision, I had to reduce down to 10ms this sampling time.
 
-## **Next session tasks:**
+## Next session tasks
 Identify the correct PID coefficients and initiate the use of our cameras to detect Aruco tags on the playground.

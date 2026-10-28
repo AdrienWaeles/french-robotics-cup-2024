@@ -1,4 +1,4 @@
-# Session report 5:
+# Session report 5: January 8, 2024
 
 **Session objective:** Assemble the pivot joints of the coding wheels and place the encoders in front of their axis.
 
@@ -36,6 +36,6 @@ Finally, I cut the rod into two parts of 15mm each using a hacksaw, so their len
 
 I also smoothed the cut surfaces with a metal file.
 
-## **Next session tasks:**
+## Next session tasks
 
 In the next session, I will complete the assembly of the coding wheel fixation. If our rolling base is ready to move, I will test our algorithm to begin determining our PID coefficients.
