@@ -6,7 +6,7 @@
 
 To achieve smooth acceleration and braking, thus preventing slippage, we can implement speed control using a trapezoidal speed profile characterized by three phases: acceleration, constant speed when the maximum authorized speed is reached, and deceleration. I have modeled the profile on GeoGebra to gain a better understanding of the required actions.
 
-[My geogebra modelisation : https://www.geogebra.org/m/n7wgewmr](https://www.geogebra.org/m/n7wgewmr)
+[My GeoGebra model: https://www.geogebra.org/m/n7wgewmr](https://www.geogebra.org/m/n7wgewmr)
 
 
 <img src="assets/session-12/trapezoidal_speed_profile.png" width="800">
@@ -20,7 +20,7 @@ Now, we can deduce the distance traveled during these durations using the kinema
 
 $$Displacement = InitialPosition+ \frac{1}{2} * Acceleration * t^{2}$$
 
-Thus :
+Thus:
 $$accelerationDistance = \frac{1}{2} \cdot \text{maxAcceleration} \cdot \text{accelerationTime}^{2}$$
 $$decelerationDistance = \frac{1}{2} \cdot \text{maxDeceleration} \cdot \text{decelerationTime}^{2}$$
 
@@ -30,7 +30,7 @@ Finally, we can calculate the distance to be covered during the constant speed p
 
 $$constantspeedDistance = \text{commandDistance} - accelerationDistance - decelerationDistance$$
 
-Therefore :
+Therefore:
 
 $$constantspeedTime = \frac{constantspeedDistance}{\text{maxSpeed}}$$
 
@@ -43,19 +43,19 @@ The main challenge in implementing this triangular profile is that, unlike befor
 
 To better understand the problem, I modeled it in GeoGebra, so you can visualize it below, where $\tau$ represents the deceleration time we are searching for:
 
-[My geogebra modelisation : https://www.geogebra.org/m/q3h9c6sb](https://www.geogebra.org/m/q3h9c6sb)
+[My GeoGebra model: https://www.geogebra.org/m/q3h9c6sb](https://www.geogebra.org/m/q3h9c6sb)
 
 <img src="assets/session-12/triangle_speed_profile.png" width="800">
 
-We define the following variables : 
+We define the following variables: 
 
-Known variables : 
+Known variables: 
 - $a_1$ : maximum acceleration of the robot,
 - $a_2$ : maximum deceleration of the robot (negative value),
-- $v_2$ : robot's speed at the end of the deceleration phase (= 0 cause at the end of deceleration the robot shouldn't be moving),
+- $v_2$ : robot's speed at the end of the deceleration phase (= 0 because at the end of deceleration the robot shouldn't be moving),
 - $d_2$ : total distance command.
 
-Unknown variables : 
+Unknown variables: 
 - $v_1$ : robot's speed at the end of the acceleration phase,
 - $t_1$ : time to complete the acceleration phase,
 - $t_2$ : time to complete the whole speed profile,
@@ -84,7 +84,7 @@ d_2 - d_1 = \frac{1}{2} \cdot a_2 \cdot \tau^{2} + v_1 \cdot \tau
 \end{cases}$$
 
 
-Now let's solve this system : 
+Now let's solve this system: 
 
 $$ l_2, l_3 \rightarrow l_4 \implies d_2 - \frac{1}{2} * a_1 * t_1^{2} = \frac{1}{2} * a_2 * \tau^{2} + (-a_2 * \tau) * \tau $$
 
@@ -119,10 +119,10 @@ If necessary, we can also determine the maximum speed $v_1$ now.
 
 $$ v_1 = a_2 * \tau $$
 
-Important note: In our calculus, we considered $a_2$ as a negative value.
+Important note: In our calculations, we considered $a_2$ as a negative value.
 
 ## Determining the absolute position of the robot
-I have also incorporated basic calculus into my code to track the absolute position of the robot. Each time I sample my measurements, I calculate the distance traveled in centimeters and the angle traveled in radians during this short period. I then update three variables, X, Y, and Z, with basic trigonometry relations to represent the position. Here's how it works:
+I have also incorporated basic calculations into my code to track the absolute position of the robot. Each time I sample my measurements, I calculate the distance traveled in centimeters and the angle traveled in radians during this short period. I then update three variables, X, Y, and Z, with basic trigonometry relations to represent the position. Here's how it works:
 
 $$ Z_{position} = Z_{previousposition} + angle_{travelled} $$
 $$ X_{position} = X_{previousposition} + (distance_{travelled} * cos(Z_{position})) $$
@@ -133,7 +133,7 @@ And $Z_{position}$ will always be reduced to a value between $-2*\pi$ and $2*\pi
 Thus, I am able to obtain the absolute position of the robot on the table in real-time, regardless of its trajectory.
 
 ## Special thanks
-I would like to thank Mr. Florian Sylvestre, a former Eurobot participant, who took the time to explain in detail how to combine speed profiles and PID, and my mechanical teacher, Mr. Franck Pluvinage, who helped me with kinematic theory.
+I would like to thank Mr. Florian Sylvestre, a former Eurobot participant, who took the time to explain in detail how to combine speed profiles and PID, and my mechanics teacher, Mr. Franck Pluvinage, who helped me with kinematic theory.
 
 ## Next session tasks
 Implement these speed profile equations into my algorithm and estimate the virtual position of the robot resulting from a command sent. Compare it with the real position obtained and correct any errors using PID.

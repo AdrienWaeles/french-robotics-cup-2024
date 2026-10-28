@@ -30,18 +30,18 @@ Here are the results with the error after implementing the new PID coefficients:
 This result is quite unsatisfactory. Despite achieving a final error close to zero, there is a significant overshoot. I need to verify if I made a mistake in applying the Ziegler-Nichols method or if it is not suitable for our system.
 
 ## Improving the rotation calibration
-As our rotation calibration wasn't very accurate, Loic created a tool fixed on the robot with a hole at the center of inertia. I used a large wooden panel with a screw to rotate the robot 360° perfectly on itself and recorded the encoder values for each wheel. With this new calibration i was able to perfectly calibrate the robot.
+As our rotation calibration wasn't very accurate, Loïc created a tool fixed on the robot with a hole at the center of inertia. I used a large wooden panel with a screw to rotate the robot 360° perfectly on itself and recorded the encoder values for each wheel. With this new calibration I was able to perfectly calibrate the robot.
 
 <img src="assets/session-09/rotation_calibration.jpg" width="450">
 
 ## Problem with fluctuating values from our encoders.
-When doing this rotation calibration i had many issues cause i wasn't getting the same values each time for the same rotation. 
+When doing this rotation calibration I had many issues because I wasn't getting the same values each time for the same rotation. 
 
-## Solution : one unique print at the end
+## Solution: a single print at the end
 I spent a considerable amount of time troubleshooting this issue, but we were ultimately able to identify the problem. Printing the values read by the encoders at each interruption significantly slowed down the program, leading to inaccurate values that were time-dependent. Instead of printing the number of ticks at each interruption, I implemented a new 'print' command, which displays the number of ticks for each encoder when called. After making this change, I could consistently read coherent values, which remained the same in each experiment.
 
 ## Reducing the sampling frequence
-As our Arduino operates with digital signals, we need to sample our measurements. Previously, I had chosen a sampling time of 100ms, but for increased precision, I had to reduce down to 10ms this sampling time.
+As our Arduino operates with digital signals, we need to sample our measurements. Previously, I had chosen a sampling time of 100ms, but for increased precision, I had to reduce this sampling time to 10ms.
 
 ## Next session tasks
-Identify the correct PID coefficients and initiate the use of our cameras to detect Aruco tags on the playground.
+Identify the correct PID coefficients and initiate the use of our cameras to detect ArUco tags on the playing field.

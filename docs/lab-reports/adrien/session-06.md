@@ -6,7 +6,7 @@
 
 ## Belts not strong enough.
 
-First of all, after Loic finished assembling the belt transmissions, we tested the rolling base on the ground. However, one belt broke directly due to the starting torque of our motors. As a result, we concluded that sewing the belts might be risky in such a competition. To address this weakness, we identified some belts with the desired length that are already a closed loop, eliminating the need for sewing.
+First of all, after Loïc finished assembling the belt transmissions, we tested the rolling base on the ground. However, one belt broke directly due to the starting torque of our motors. As a result, we concluded that sewing the belts might be risky in such a competition. To address this weakness, we identified some belts with the desired length that are already a closed loop, eliminating the need for sewing.
 
 ## Assembling the wheels with encoders.
 
@@ -16,7 +16,7 @@ Then, after I finished placing the encoder magnets in their 3D printed support, 
 
 The assembly is mounted on an aluminum shaft cut to the desired size. It includes the wheel, an arm, and the 3D printed part that holds the magnet, with washers between them, all assembled by force with no tolerances. The encoder is mounted on the arm using the initial spacers and screws.
 
-Then I mounted the other part of the arm on pivot connection on the rolling base with a bolt and washers. 
+Then I mounted the other part of the arm with a pivot connection on the rolling base with a bolt and washers. 
 
 <img src="assets/session-06/Coding_wheel_assembled_rollingbase.jpg" width="250">
 
@@ -30,7 +30,7 @@ At first, I thought it was due to a poorly fixed encoder that might be moving du
 After some research, I discovered that because the magnet is broken into three parts, the fragmentation could lead to irregularities in the field, causing issues with the encoder's readings.
 
 I tried replacing this magnet with a neodymium magnet I found, but the results were peculiar. On one side of the magnet, the encoder detected no variation, while on the other side, the encoder detected a significant variation even when the wheel wasn't spinning. 
-I had a correct result only when placing the side of it in front of the hall sensor, which isn't the result desired.
+I had a correct result only when placing the side of it in front of the hall sensor, which isn't the desired result.
 
 Since our original magnet had a hole in the center, I wondered if this had an influence on the magnetic field. To verify this, I attempted to drill a hole in the new magnet using a drill press. However, it was challenging to keep the drill perpendicular without creating a specialized support.
 
@@ -41,7 +41,7 @@ Since our original magnet had a hole in the center, I wondered if this had an in
 <img src="assets/session-06/tested_magnet.jpg" width="100"> Tested Magnet
 
 
-To grasp the issue, I delved into understanding the precise workings of an encoder. A magnetic encoder detects rotational position changes through variations in the magnetic field. As the motor shaft's attached permanent magnet rotates, the magnetic sensor registers shifts in the magnetic field. But there are different way of magnetizing a magnet : it can be with a radial direction or axial direction as explained below.
+To grasp the issue, I delved into understanding the precise workings of an encoder. A magnetic encoder detects rotational position changes through variations in the magnetic field. As the motor shaft's attached permanent magnet rotates, the magnetic sensor registers shifts in the magnetic field. But there are different ways of magnetizing a magnet: it can be with a radial direction or axial direction as explained below.
 
 <img src="assets/session-06/magnetization_field_lines_fromAKM.png" width="450">
 
