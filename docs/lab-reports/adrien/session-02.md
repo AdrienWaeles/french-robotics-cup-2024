@@ -1,4 +1,4 @@
-# Session report 2:
+# Session report 2: October 21, 2023
 
 **Session objective:** Complete research on the most crucial physics constraints to consider in achieving a reliable rolling base for the prototyping of the next version. And begin work on the closed-loop control.
 
@@ -50,6 +50,6 @@ As explained earlier, the coding wheels are positioned in parallel to the drivin
 
 
 
-## **Next session tasks:**
+## Next session tasks
 
 During the next session, I will continue preparing the robot displacement and odometry algorithms, as well as the necessary calculations, to be ready to begin work on the robot's position. If the new rolling base prototype, including the coding wheels, is ready, I will initiate the odometry calibration.

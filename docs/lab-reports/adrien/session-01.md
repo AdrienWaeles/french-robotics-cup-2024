@@ -1,4 +1,4 @@
-# Session Report 1:
+# Session report 1: October 14, 2023
 
 **Session Objective:** Mount the received DC motors on the prototype, test them, and determine parameters useful for the robot's control.
 
@@ -55,7 +55,7 @@ Having received the official vinyl game mat, we wanted to calculate the coeffici
 
 However, our scale was limited to loads of 2 kg, so we have to postpone this calculation to later. However, this allowed us to observe the very strong adhesion of the roller wheels on the vinyl and to manufacture the suspended bucket system that will be used later.
 
-## Sources:
+## Sources
 
-    http://www.rcva.fr/wp-content/uploads/2016/12/devoir_de_vacances.pdf
-    https://github.com/VRAC-team/la-maxi-liste-ressourceseurobot/blob/master/asservissement/Cubot-atelier_asservissement.pdf
+- http://www.rcva.fr/wp-content/uploads/2016/12/devoir_de_vacances.pdf
+- https://github.com/VRAC-team/la-maxi-liste-ressourceseurobot/blob/master/asservissement/Cubot-atelier_asservissement.pdf

@@ -11,6 +11,7 @@ To connect a camera to the Linux host provided on the Jetson using serial-over-U
 ## Problem with serial communication with ESP32
 After successfully transfering a program to the ESP32, it was constantly rebooting as the following message was continously printed on the console : 
 
+```text
 rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 configsip: 0, SPIWP:0xee
 clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
@@ -20,6 +21,7 @@ load:0x40078000,len:13516
 load:0x40080400,len:3604
 entry 0x400805f0
 ets Apr 9 2024 09:22:53
+```
 
 After some researchs i found out that on a classic ESP32 there are 6 pins which are used by internal Flash and thus musn't be connected to anything otherwise the chip will reboot indefinitely. The problem was simply solved by switching the cables on other pins, not used by internal flash, based on the following ESP32 Pinout diagramm made by uPesy : 
 

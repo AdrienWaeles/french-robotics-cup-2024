@@ -1,4 +1,4 @@
-# Session report 11: March 05, 2024
+# Session report 11: March 5, 2024
 
 **Session objective:** Learn more about PID to enhance our closed-loop control model, implement trapezoidal speed profiles, and conduct research on robot trajectories.
 
@@ -32,10 +32,10 @@ After reviewing robotics cup replays from past years, I observed that most teams
 ## Trapezoidal speed command
 I dedicated the end of the session to researching how to implement a trapezoidal speed command to prevent wheel spinning both at the start and end of the robot's movement, ensuring that the setpoint is not exceeded. I explored various algorithms before selecting the most accurate and easy-to-implement method. Drawing from the experience of the Cubot Team, who generously shared their insights on their GitHub repository, I learned that this can be achieved by calculating the duration of each phase using kinematic equations, along with parameters such as maximum allowed speed, acceleration, deceleration coefficients and the target distance. With these durations determined, we can then determine the appropriate speed to send to each motor to reach the desired position throughout the three phases.
 
-## **Next session tasks:**
+## Next session tasks
 In the upcoming session, I will implement trajectories to navigate coordinates and reach any point on the table. Additionally, I will simultaneously implement the trapezoidal speed profile.
 
-## Sources :
+## Sources
 https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/totofweb-PID_r%C3%A9gulation_de_position_vitesse.pdf
 
 https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot/blob/master/asservissement/TechTheTroll-trajectoire_courbe.pdf

@@ -1,6 +1,6 @@
-# Session report 3:
+# Session report 3: December 8, 2023
 
-**Session objective:** : 
+**Session objective:**
 - Assemble the solar panels (game accessories) in preparation for manufacturing the playfield.
 - Develop the closed-loop motor control algorithm.
 
@@ -50,5 +50,5 @@ Finally as each coding wheel has a little diameter difference, we will never hav
 The rest of the code with the pid regulation and odometry is well commented and available on the github.
 
 
-## **Next session tasks:** 
+## Next session tasks
 Test the closed-loop control algorithm on the robot and select appropriate coefficients to estimate robot's position and to have a correct trajectory
